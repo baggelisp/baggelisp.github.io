@@ -3,4 +3,5 @@
 Url:
 baggelisp.github.io or baggelisp.tk
 
-Made with wordpress!
+Css template by w3school!
+Costum css file and html by me!
