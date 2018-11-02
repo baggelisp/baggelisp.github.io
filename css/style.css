@@ -1,0 +1,367 @@
+body {
+    font-family: Arial;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.menu{
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: black;
+}
+
+.menu h1{
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+}
+
+.menu nav {
+  padding-top: 15%;
+
+
+}
+
+
+.menu nav ul{
+  list-style: none;
+  padding:0;
+
+}
+
+.menu nav ul li{
+
+  width: 90%;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 5%;
+}
+
+.menu nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+
+}
+
+.menu nav ul li a:hover, .menu nav ul li a:focus {
+  background-color: #f0e68c;
+ color: #000!important;
+}
+
+.menu nav ul .menu-projects:hover{
+  background-color: #739396
+}
+.menu nav ul .menu-resume:hover{
+  background-color: #986d6d
+}
+.menu nav ul .menu-contact:hover{
+  background-color: #927665
+}
+
+
+.about{
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: #f0e68c;
+  color: black;
+  padding:0;
+}
+.about h1{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.about-container{
+  width: 90%;
+  margin: 5%;
+  padding-top: 10%;
+
+}
+
+.about-container img{
+  width: 40%;
+  margin: 0 30% 5% 30%;
+}
+
+.projects{
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: #d6dcb1;
+  color: black;
+  padding:0;
+}
+
+.projects h1{
+  text-align: center;
+}
+
+.projects-container{
+  width: 90%;
+  margin: 5%;
+  padding-top: 10%;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15%;
+    font-size: 0.7em;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.resume{
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: #bfb68e;
+  color: black;
+  padding:0;
+
+}
+
+.resume-container{
+  width: 90%;
+  margin: 5%;
+  padding-top: 30%;
+  text-align: center;
+
+
+}
+
+.resume-container h1{
+
+      font-family: "proxima-nova",proxima-nova;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 10px 0 0px 0;
+    text-shadow: 2px 4px 5px black;
+}
+
+
+.resume-container h2{
+    font-family: adobe-garamond-pro;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    margin:0;
+    text-shadow: 2px 4px 5px black;
+    padding-bottom: 60px;
+
+}
+
+
+.resume-container a{
+    font-family: proxima-nova;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    text-decoration: none;
+  border: 3px solid white;
+  color: white;
+  padding: 21px 34px;
+  margin-top: 200px;
+}
+
+.resume-container a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+
+.contact{
+  width: 100%;
+  height: calc(100vh - 16px);
+  background-color: #26262a;
+  
+  padding:0;
+  background-image: url(../images/laptop.jpg);
+
+}
+.contact-container{
+  width: 90%;
+  margin: 5%;
+  padding-top: 10%;
+  text-align: center;
+  color: white;
+
+}
+
+.contact-container h1{
+  padding-bottom: 15%;
+}
+
+
+.contact-container h3{
+  padding-bottom: 10%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 100%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+footer .footer-social{
+  margin-top: 40px;
+}
+.fa-facebook , .fa-twitter , .fa-linkedin , .fa-instagram , .fa-github{
+  background: #000000bd;
+  color: white;
+}
+
+
+
+.separator{
+  color: black;
+  font-size: 15px;
+}
+.last-line{
+  margin-top: 0;
+  width: 100%;
+  text-align:center;
+  color: black;
+}
+
+.last-line a{
+  color: red;
+}
+
+
+/******************** DESKTOP VERSION *****************/
+
+@media only screen  and (min-width: 1000px){
+
+
+.menu{
+  width: 50%;
+  float: left;
+  position: fixed;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+
+  }
+
+.about , .projects , .resume , .contact{
+  width: 50%;
+  margin: 0;
+  margin-left: 50%;
+  height: 100vh;
+
+
+}
+
+table {
+  font-size: 1em;
+}
+.last-line{
+  width: 50%;
+  margin-left: 50%;
+  height: 20px;
+}
+
+.last-line p{
+  padding: 0;
+  margin: 0;
+
+}
+
+.about-container , .projects-container , .resume-container , .contact-container{
+  margin: 0px 5%;
+}
+
+body{
+  margin: 0;
+}
+
+
+
+}
+
+
+/******************** MOBILE VERSION ****************
+
+@media only screen  and (max-width: 1000px){
+
+
+
+
+
+.menu h1{
+      
+      padding: 50% 0 0 0;
+      font-size: 500%;
+}
+
+.menu nav ul li a {
+  font-size:500%;
+      line-height: 200%;
+}
+
+.about h1{
+  padding-top: 10%;
+  font-size:400%;
+  }
+
+  .about p{
+  font-size:300%;
+  }
+
+
+  .projects h1{
+  padding-top: 10%;
+  font-size:400%;
+  }
+
+  table {
+     font-size:200%;
+  }
+
+.resume-container h1 {
+        font-size: 500%;
+
+  }
+.resume-container h2{
+          font-size: 500%;
+}
+
+.resume-container {
+  padding-top: 30%;
+
+}
+
+.resume-container a {
+     font-size: 400%;
+}
+
+
+*/

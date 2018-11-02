@@ -1,73 +1,55 @@
 <!DOCTYPE html>
 <html>
-<title>Vangelis Spathonis | Personal Portfolio</title>
-<link rel="shortcut icon" href="icon.ico" />
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css\style.css">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!--Css template from w3schooll-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-
-<!--Custom styles-->
-<link rel="stylesheet" href="custom.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
 
-<body class="w3-content" style="max-width:1300px">
-<!-- First Grid: Logo & About -->
-<div class="w3-row">
-  <div class="w3-half w3-black w3-container w3-center" style="height:700px">
-    <div class="w3-padding-64" style="margin-top: 8%;">
-      <h1 style="margin-bottom: 15%">Vangelis Spathonis | Personal Portfolio</h1>
-      <a href="#" class="w3-button w3-black w3-block w3-hover-khaki w3-padding-16">Home</a>
-      <a href="#projects" class="w3-button w3-black w3-block w3-hover-blue-grey w3-padding-16">My Projects</a>
-      <a href="#find_me_on_social" class="w3-button w3-black w3-block w3-hover-grey w3-padding-16">Find me on social</a>
-      <a href="#contact" class="w3-button w3-black w3-block w3-hover-amber w3-padding-16">Contact</a>
-    </div>
-  </div>
-  <div class="w3-half w3-khaki w3-container" style="height:700px">
-    <div class="w3-padding-64 w3-center">
-      <h1>About Me</h1>
-      <img src="pic.png" class="w3-margin w3-circle" alt="My photo" style="width:50%">
-      <div class="w3-left-align w3-padding-large">
-        <p>Studying Electrical and Computer Engineering at University of Patras. </p>
-        <p>A sound background in electronics and software developing as well as extensive training in structured programming techniques such as Python, C, Java.</p>
-      </div>
-    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+<body>
+
+<div class="menu">
+  <h1>Vangelis Spathonis | Personal Portfolio</h1>
+
+  <nav>
+      <ul>
+        <li><a href="#about" class="menu-about">About</a></li>
+        <li><a href="#projects" class="menu-projects">My Projects</a></li>
+        <li><a href="#resume" class="menu-resume">Resume</a></li>
+        <li><a href="#contact" class="menu-contact">Contact</a></li>
+      </ul>
+    </nav>
+</div>
+
+<div class="about" id="about">
+  <div class="about-container">
+
+    <h1>About me</h1>
+    <img src="images/pic.png">
+    <p>Studying Electrical and Computer Engineering at University of Patras.</p>
+    <p>A sound background in electronics and software developing as well as extensive training in structured programming techniques such as Python, C, Java.</p>
+    
   </div>
 </div>
 
-<!-- Second Grid: Work & Resume -->
-<div class="w3-row">
-  <div class="w3-half w3-grey w3-center" style="min-height:800px" id="find_me_on_social">
+<div class="projects" id="projects">
 
-    <div class="w3-padding-64" style="margin-top: 25%;">
-      <h2>Find me on social</h2>
-    </div>
+  <div class="projects-container">
+    <h1>My projects</h1>
 
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <!-- Add font awesome icons -->
-    <a href="https://www.facebook.com/baggelisp.kef" class="fa fa-facebook"></a>
-    <a href="https://www.instagram.com/baggelis_sp/" class="fa fa-instagram"></a>
-    <a href="https://www.linkedin.com/in/vangelis-spathonis-a16b80146/" class="fa fa-linkedin"></a>
-    <a href="https://github.com/baggelisp" class="fa fa-github"></a>
-  </div>
-  <div class="w3-half w3-blue-grey w3-container" style="min-height:800px">
-    <div class="w3-padding-64 w3-center">
-      <h2>My projects</h2>
-
-      <div class="w3-container w3-responsive" style="padding-top: 30px" id="projects">
-        <table class="w3-table">
+          <table>
           <tr>
             <th>Year</th>
             <th>Title</th>
             <th>Language</th>
           </tr>
-          <tr class="w3-white">
+          <tr>
             <td>2018</td>
             <td>Instabot</td>
             <td>Python</td>
@@ -77,7 +59,7 @@
             <td>Student Service Management System</td>
             <td>MySQL + Python</td>
           </tr>
-          <tr class="w3-white">
+          <tr>
             <td>2017-now</td>
             <td>Tichu Game</td>
             <td>Python</td>
@@ -87,71 +69,70 @@
             <td>Blood Pressure Monitoring System</td>
             <td>Java + MySQL</td>
           </tr>
-          <tr class="w3-white">
+          <tr>
             <td>2017</td>
             <td>Logic Gate Simulator</td>
             <td>Java</td>
           </tr>
-          <tr class="w3-hide-medium">
+          <tr>
             <td>2017-now</td>
             <td>Asteia Status app</td>
             <td>Andoid Studio</td>
           </tr>
-          <tr class="w3-white">
+          <tr>
             <td>2018</td>
             <td>Blogger new-post automation from twitter</td>
             <td>Python + Twitter API</td>
           </tr>
         </table>
-        <p style="color: black;margin-top: 50px;" >Explore my projects on <a href="https://github.com/baggelisp" target="_blank">github</a>.<p>
-      </div>
-    </div>
+
+        <p style="color: black;margin-top: 50px;text-align: center;" >Explore my projects on <a href="https://github.com/baggelisp" target="_blank">github</a>.<p>
+    
+  </div>
+
+</div>
+
+
+<div class="resume" id="resume">
+
+  <div class="resume-container">
+
+    <h1>Download my CV</h1>
+    <h2>Find out what I've accomplished over the years</h2>
+    <a href="/pdf link" download>DOWNLOAD RESUME</a>
+
   </div>
 </div>
 
-<!-- Third Grid: Swing By & Contact -->
-<div class="w3-row">
-  <div class="w3-half w3-light-gray w3-container w3-center" style="height:700px" id="Swing_By">
-    <div class="w3-padding-64">
-      <h1>Swing By</h1>
+
+<div class="contact" id="contact">
+
+  <div class="contact-container">
+
+    <h1>Contact me</h1>
+
+    <h2>Email me</h2>
+    <h3>baggelisp.keph@gmail.com</h3>
+    <h2>...or find me on social</h2>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/baggelisp.kef" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/baggelas" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/vangelis-spathonis-a16b80146/" class="fa fa-linkedin"></a>
+    <a href="https://www.instagram.com/baggelis_sp/" class="fa fa-instagram"></a>
+    <a href="https://github.com/baggelisp" class="fa fa-github"></a>
     </div>
-    <div class="w3-padding-64">
-      <p>..for a cup of coffee, or whatever.</p>
-      <p>Patra, Greece</p>
-      <p>baggelisp.keph@gmail.com</p>
-    </div>
+
   </div>
+</div>/
+
+   
 
 
-
-  <div class="w3-half w3-amber w3-container" style="height:700px" id="contact">
-    <div class="w3-padding-64 w3-padding-large">
-      <h1>Contact</h1>
-      <p class="w3-opacity">GET IN TOUCH</p>
-      <form class="w3-container w3-card w3-padding-32 w3-white" action="https://formspree.io/baggelisp.keph@gmail.com" method="POST" target="_blank">
-        <div class="w3-section">
-          <label>Name</label>
-          <input class="w3-input" style="width:100%;" type="text" required name="name">
-        </div>
-        <div class="w3-section">
-          <label>Email</label>
-          <input class="w3-input" style="width:100%;" type="email" required name="_replyto">
-        </div>
-        <div class="w3-section" >
-          <label>Message</label>
-          <input class="w3-input" style="width:100%;height:100px; " type="text" required name="message">
-        </div>
-        <button type="submit" class="w3-button w3-blue-grey w3-right">Send</button>
-      </form>
+<div class="last-line"><p>
+      &copy; 2018 Personal Portfolio &nbsp; <span class="separator">|</span> &nbsp; Desing by  <a href="https://baggelisp.github.io/" target="_blank" >Vangelis Spathonis</a></p>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-black w3-padding-16">
-  <p>Css Theme by <a href="https://www.w3schools.com/" target="_blank" >w3.css</a> - Powered by me - 2018</p>
-  <p>Contact form by <a href="https://formspree.io/" target="_blank" >formspree.io</a>
-</footer>
+  </footer>
 
 </body>
 </html>
