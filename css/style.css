@@ -192,10 +192,10 @@ th, td {
 .contact{
   width: 100%;
   height: calc(100vh - 16px);
-  background-color: #26262a;
-  
   padding:0;
   background-image: url(../images/laptop.jpg);
+  background-repeat:no-repeat;
+  background-position:center center;
 
 }
 .contact-container{
