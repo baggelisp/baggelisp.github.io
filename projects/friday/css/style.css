@@ -1,0 +1,558 @@
+/* Comments */
+html {
+    background: #343434;
+}
+
+body {
+    background-color: #343434;
+    margin:0;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+
+/****************** Header - Top menu ***********************/
+
+#top-bar{
+    background: none;
+    transition: 1s;
+}
+
+nav { 
+    z-index: 500;
+    display: block;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+#logo{
+}
+nav #logo-container {
+    float: left;
+    vertical-align: center;
+    display: inline-flex;
+    padding-left: 14px;
+    padding-top: 5px;
+        
+}
+nav #logo-container img {
+    height: 60px;
+    width: 150px;
+}
+
+#openNav{
+    background: none;
+    color: white;
+    border: none;
+    padding: 0px;
+    
+
+}
+
+.fas:active {
+    border: 1px solid #868387;
+}
+.fas{
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.fas:hover {
+    background-color: #383838;
+}
+
+#menu {
+    float: right;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+#menu a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left:10px;
+}
+
+#menu a:hover {
+    background-color:black;
+    color: white;
+}
+
+#log_in_button {
+    border-radius: 10%;
+    background-color: #8BC34A;
+}
+
+#sign_up_button {
+    border-radius: 10%;
+    background-color: #383838;
+}
+
+#log_in_button:hover {
+    border: 2px solid #8BC34A;
+    background-color: black;
+}
+
+#sign_up_button:hover {
+    border: 2px solid #383838;
+    background-color: black;
+}
+
+
+/****************** Main ***********************/
+
+.content{
+    width: 100%;
+}
+
+/****************** SIDEBAR ***********************/
+
+
+
+#sidebar {
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    left: -15%;
+    background-color: #343434;
+    padding-top: 20px;
+  transition: 0.5s;
+  overflow: auto;
+  }
+  
+#sidebar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    transition: 0.25s;
+    line-height: 2.25;
+    padding: 0 10%;
+   
+  }
+.sidebar_nav{
+    padding: 120px 0px;
+  }
+  
+#sidebar a:hover {
+    color:#a29e9e;
+  }
+
+  #sidebar .fa{
+      width: 30px;
+  }
+
+/****************** Main ***********************/
+
+#main{
+
+    width: 100%;
+    float: right;
+    position: relative;
+    transition: 0.5s;
+    
+
+}
+
+/****************** Section 1 ***********************/
+
+.section_1{
+    background: #000 url(../images/home.jpg);
+    height: 100vh;
+    color: #fff;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    opacity: .6;
+    position: absolute;
+  }
+
+.hero_content{
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+    z-index: 1;
+    animation: pop-in 3s ease-out forwards;
+    
+
+}
+.hero_content h1{
+    margin: 0;
+}
+.hero_content h3{
+    margin: 0;
+}
+/* Animations */
+
+@keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translate(0%, -50%) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+#hero_menu{
+    margin-top: 20px;
+}
+#hero_sign_up_button{
+    border-radius: 10%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 30px;
+
+}
+#hero_sign_up_button:hover{
+    background-color: #4d4d4db4;
+}
+
+#hero_explore_button{
+    border-radius: 10%;
+    background-color: #b10000;
+    color: white;
+    padding: 5px 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#hero_explore_button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+
+#hero_explore_button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+
+#hero_explore_button:hover{
+    background-color: #b100007a;
+}
+
+#hero_explore_button:hover span {
+    padding-right: 25px;
+  }
+#hero_explore_button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Log in box */
+
+.login_wrapper{
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    margin-left: 50%;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,1);
+    z-index: 1; 
+    box-shadow: -11px 14px 43px -15px rgba(69,69,69,1);
+    padding: 20px 0px 40px 0px;
+}
+
+.login_box{
+    padding: 20px 30px;
+  border-radius: 5px;
+}
+
+
+.log_in_container{
+    display: grid;
+}
+
+.log_in_container label{
+    margin: 10px 0;
+}
+
+.log_in_container button{
+    margin-top: 10px;
+   /* background-image: linear-gradient(160deg, #4b9c40 0%, #37923b 100%); */
+    background: #8BC34A;
+    border: 0;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.log_in_container button:hover{
+    background: #37923b;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px 0px;
+    margin: 15px 0px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(247, 243, 243, 0.248);
+    outline: none;
+    color: #46485c;
+  }
+
+  .forgot {
+    margin-top: 30px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: #46485c;
+  }
+  .forgot:hover {
+    margin-top: 30px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: #6d7781;
+  }
+
+
+
+
+
+/****************** Section 2 ***********************/
+
+
+.section_2{
+    width: 100%;
+    height: 100vh;
+    background:rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    padding-top: 8%;
+}
+
+.section_2 h2,h4{
+    margin: 0;
+}
+
+.about_wrapper{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.about_quotes{
+    width: 40%;
+    height: 80%;
+    margin: auto;
+}
+.about_quotes p{
+    text-align: left;
+}
+.about_quotes img{
+    width: 50%;
+    padding-top: 5%;
+  object-fit: cover;
+}
+
+.video{
+    width: 40%;
+    height: 80%;
+    margin: auto;
+    background-color: #be2791;
+
+}
+
+
+/****************** Section 3 ***********************/
+
+.section_3{
+    width: 100%;
+    height: auto;
+    background:rgb(175, 161, 31);
+    color: #000;
+    text-align: center;
+    padding-bottom: 20px
+}
+.section_3 h2,h4{
+    margin: 0;
+}
+
+.services_wrapper{
+    width: 80%;
+    margin: 5% 10%;
+    background:rgb(53, 129, 30);
+    height: auto;
+
+}
+
+.services_row{
+display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background:rgb(45, 30, 129);
+
+}
+.services_col_1_row_1 ,.services_col_2_row_1,.services_col_3_row_1{
+    grid-column: 1 / 3;
+    height: 50vh;
+    margin: 5% 0;
+}
+
+.services_col_1_row_1{
+  grid-row: 1;
+  grid-column: 1;
+  background:rgb(141, 67, 113);
+
+}
+.services_col_2_row_1{
+  grid-row: 1;
+  grid-column: 2;
+  background:rgb(85, 84, 26);
+
+}
+.services_col_3_row_1{
+  grid-row: 1;
+  grid-column: 3;
+  background:rgb(19, 86, 124);
+
+}
+
+
+/****************** Section 4 ***********************/
+
+.section_4{
+    width: 100%;
+    height: auto;
+    background:rgb(33, 134, 92);
+    color: black;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.section_4 h2,h4{
+    margin: 0;
+}
+
+.who_we_are_wrapper{
+    width: 80%;
+    margin: 5% 10%;
+    background:rgb(30, 53, 129);
+
+
+}
+
+.who_we_are_1{
+    width: 80%;
+    background:rgb(108, 129, 30);
+    height: 300px;
+    margin: 5% auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.who_we_are_2{
+    width: 80%;
+    background:rgb(81, 30, 129);
+    height: 300px;
+    margin: 5% auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+.section_4 .info{
+    width: 60%;
+    text-align: left;
+    padding: 5%;
+
+}
+
+.image_baggos{
+    background-color: #37923b;
+    height: auto;
+    width: 30%;
+    border-radius: 100%;
+    margin: 5% 5% 5% 0%;
+}
+.image_thanos{
+    background-color: #37923b;
+    height: auto;
+    width: 30%;
+    border-radius: 100%;
+    margin: 5% 0% 5% 5%;
+}
+/****************** Section 5 ***********************/
+
+.section_5{
+    width: 100%;
+    height: 100vh;
+    background:black;
+    color: #37923b;
+    text-align: center;
+}
+.section_5 h2,h4{
+    margin: 0;
+}
+
+.contact_wrapper{
+
+    width: 80%;
+    height: 100%;
+    margin: 5% 10%;
+    background:rgb(75, 49, 49);
+
+}
+
+
+/****************** Footer ***********************/
+
+.footer{
+
+    widows: 100%;
+    height: 40vh;
+    background: #b10000;
+
+}
+
+.footer p{
+    margin: 0;
+}

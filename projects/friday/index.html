@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Smart Home Application</title>
+	<meta charset="utf-8">
+    <meta name="description" content="Smart Home Application">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smooth_scrolling.js"></script>
+    <script src="js/top_bar_scrolling.js"></script>
+</head>
+
+<body onload="check_sidebar();";>
+    <nav id="top-bar">
+
+        <div id="logo-container">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="toggleNav()"><i class="fas fa-bars" id="fa"></i></button>
+            <a id="logo" href="index.html" ><img src="images\hero_logo.png"></a>
+        </div>
+        
+
+        <div id="menu">
+            <a href="" id="sign_up_button">Sign up</a>
+            <a href="" id="log_in_button">Log in</a>
+        </div>
+
+    </nav>
+
+    <div class="content" style="background-color: #343434;">
+        <div id="sidebar" >
+                <div class="sidebar_nav">
+                    <a href="#" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
+                    <a href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
+                    <a href="#rooms"><i class="fa fa-bed"></i>&ensp;Rooms</a>
+                    <a href="#devices"><i class="fa fa-plug"></i>&ensp;Devices</a> 
+                    <a href="#cameras"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                    <a href="#settings"><i class="fa fa-wrench"></i>&ensp;Settings</a>
+                    <a href="#history"><i class="fa fa-history"></i>&ensp;History</a>
+                    <a href="#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
+                    <a href="#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
+                    <a href="#who_we_are"><i class="fa fa-address-card"></i>&ensp;Who we are</a>
+                    <a href="#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
+                </div>
+            </div> 
+        </div>
+        <div id="main">
+
+
+
+            <div class="section_1">
+                <div class="color-overlay"></div>
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Friday</h1>
+                        <h3>Revolutionary Smart Home App</h3>
+                        <div id="hero_menu">
+                                <a href="" id="hero_sign_up_button">Sign up</a>
+                                <a href="#about" id="hero_explore_button"><span>Explore </span></a>
+                        </div>
+                    </div>
+
+                    <div class="login_wrapper">
+                            <div class="login_box">
+                                    <h2>Log in</h2>
+                                    <form action="/action_page.php">
+                                    
+                                      <div class="log_in_container">
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                    
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                            
+                                        <button type="submit">Log in</button>
+                                        <label>
+                                          <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
+                                        </label>
+                                        <a class='forgot' href='#'>Forgot your password?</a>
+                                      </div>
+                                
+                                    </form>
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section_2" id="about">
+                <h2>Friday. Web app for home automation</h2>
+                <h4>Friday is a web interface that lets you control and monitor your home.<br>Control all your smart appliances</h4>
+            
+                <div class="about_wrapper">
+                    <div class="about_quotes">
+                        <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <img src="images/about_logo.png" alt="">
+
+                    </div>
+                    <div class="video">
+                        <h2>
+                            VIDEO
+                        </h2>
+
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="section_3" id="services">
+                    <h2>Services</h2>
+
+                    <div class="services_wrapper">
+                        <div class="services_row">
+                            <div class="services_col_1_row_1">One</div>
+                            <div class="services_col_2_row_1">Two</div>
+                            <div class="services_col_3_row_1">Three</div>
+                        </div>
+                        <div class="services_row">
+                                <div class="services_col_1_row_1">One</div>
+                                <div class="services_col_2_row_1">Two</div>
+                                <div class="services_col_3_row_1">Three</div>
+                        </div>
+
+                    </div>
+            </div>
+
+
+            <div class="section_4" id="who_we_are">
+                    <h2>Who we are</h2>
+
+                    <div class="who_we_are_wrapper">
+
+                        <div class="who_we_are_1">
+                            <div class="info">
+                                <h2> Vangelis Spathonis</h2>
+                                <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                                </p>
+
+                            </div>
+                            <div class="image_baggos"></div>
+
+                        </div>
+                        <div class="who_we_are_2">
+                                <div class="image_thanos"></div>
+                                <div class="info">
+                                        <h2>Thanasis Kalatheris</h2>
+                                        <p>
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
+                                        </p>
+        
+                                </div>
+                            
+
+                        </div>
+
+
+                    </div>
+
+            </div>
+
+            <div class="section_5" id="contact">
+                    <h2>Contact us</h2>
+
+                    <div class="contact_wrapper">
+                        
+
+                    </div>
+
+            </div>
+
+
+            <div class="footer">
+                <p>Footer</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>
+
+
+
+
+
+
+
+
