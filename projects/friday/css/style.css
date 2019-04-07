@@ -197,7 +197,7 @@ nav #logo-container img {
 .hero_content{
     width: 40%;
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 40%;
     transform: translate(-50%, -50%);
     font-family: 'Passion One', cursive;
@@ -284,7 +284,7 @@ nav #logo-container img {
 .login_wrapper{
     width: 20%;
     position: absolute;
-    top: 5%;
+    top: 4%;
     margin-left: 50%;
     border-radius: 20px;
     background-color: rgba(0,0,0,1);
