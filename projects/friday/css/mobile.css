@@ -79,6 +79,10 @@
         width: 30%;
         top: 2%;
     }
+
+    .services_row h2 {
+        font-size: 8vw;
+    }
     
 }
 
@@ -184,7 +188,7 @@ display: block;
 
     nav #logo-container img {
         display: block;
-        margin-left: 40%;
+        margin-right: calc(50% - 120px);
         padding-top: 10px;
 
     }
@@ -211,6 +215,29 @@ display: block;
 
     #top-bar {
         width: 100%;
+    }
+
+    .who_we_are_1 , .who_we_are_2 {
+        
+        display: block;
+        width: 60%;
+        margin: auto;
+        height: auto;
+        margin-bottom: 10%;
+        padding: 10%;
+    }
+
+    .image_thanos , .image_baggos {
+        margin: auto;
+        float: none;
+    }
+
+    .info{
+        text-align: center;
+    }
+
+    .info p ,.info h3{
+        text-align: left;
     }
 
     
