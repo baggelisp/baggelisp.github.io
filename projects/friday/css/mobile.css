@@ -139,10 +139,10 @@ display: block;
     }
 
     .section_5 .contact_wrapper{
-        margin: 0;
         width: 100%;
         padding: 0;
-        display: flex;
+        margin: auto;
+        display: block;
     }
 }
 
@@ -154,7 +154,9 @@ display: block;
     #account_content{
         display: none;
     }
-
+    #menu{
+        margin-top: 25px;
+    }
     #menu a{
         padding: 14px;
     }
