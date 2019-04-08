@@ -129,7 +129,21 @@ display: block;
     .section_5 .screen-body-item {
         padding: 0 60px 0 0;
     }
-    
+    .screen-body {
+    padding: 20px 0 20px 40px;
+    width: 80%;
+    margin: 0;
+    }
+    .section_5 .screen-body-item {
+        padding: 0;
+    }
+
+    .section_5 .contact_wrapper{
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -183,6 +197,10 @@ display: block;
         display: block;
         width: 70%;
         margin: auto;
+    }
+
+    .footer .screen-body{
+        width: 80%;
     }
 
     #top-bar {
