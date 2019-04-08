@@ -86,6 +86,8 @@
     .sidebar{
         width: 25%;
     }
+
+    
 }
 
 @media only screen and (max-width: 670px) {
@@ -117,6 +119,17 @@ display: block;
     .sidebar{
         width: 30%;
     }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .section_5 .app-title {
+        display: block;
+    }
+    .section_5 .screen-body-item {
+        padding: 0 60px 0 0;
+    }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -171,4 +184,11 @@ display: block;
         width: 70%;
         margin: auto;
     }
+
+    
+
+   
+
+    
+    
 }
