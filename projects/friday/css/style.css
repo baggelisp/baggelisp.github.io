@@ -668,17 +668,18 @@ display: grid;
 
     width: 70%;
     height: 100%;
-    margin: 5% 10%;
+    margin: auto;
 
 }
 
-
+/*
 .contact_wrapper{
+
     flex: 0 1 700px;
     margin: auto;
     padding: 10px;
-    
-  }
+
+  }*/
   
   .screen {
     position: relative;
