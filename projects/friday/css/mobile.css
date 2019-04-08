@@ -162,4 +162,13 @@ display: block;
     .separator{
         width: 80%;
     }
+
+    .footer{
+        height: auto;
+    }
+    .footer_row{
+        display: block;
+        width: 70%;
+        margin: auto;
+    }
 }
