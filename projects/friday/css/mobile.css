@@ -1,0 +1,158 @@
+/************ MAX-WIDTH 1300px ************/
+
+@media only screen and (max-width: 1300px) {
+
+
+    .login_wrapper{
+        width: 25%;
+    }
+
+    .fa-thermometer-half h2{
+        FONT-SIZE: 30PX;
+    }
+
+    .section_5 .screen-body-item{
+        padding: 60px;
+    }
+
+    .section_5 .screen-body-item.left {
+        display: none;
+    }
+    .section_5 .services_row h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+
+    .section_4 .info{
+        font-size: 1.3vw;
+    }
+    nav #logo-container img {
+        display: none;
+    }
+    #fa{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .sidebar{
+        width: 20%;
+        height: 100%;
+    }
+
+}
+@media only screen and (max-width: 941px) {
+    .footer_col_2 , .footer_col_3{
+        display: none;
+    }
+    .footer_col_4 {
+        grid-row: 1;
+        grid-column: 3/5;
+    }
+    .footer_col_1 {
+        grid-row: 1;
+        grid-column: 1/3;
+        width: 80%;
+        margin: auto;
+    }
+    #hero_sign_up_button{
+        display: none;
+    }
+
+}
+@media only screen and (max-width: 925px) {
+
+
+    .services_row{
+        display: block;
+    }
+    .services_col_1_row_1,.services_col_2_row_1,.services_col_3_row_1{
+        padding-bottom: 0;
+        margin-bottom: 100px;
+    }
+    .hero_content {
+        top: 5%;
+    }
+    .login_wrapper {
+        width: 30%;
+        top: 2%;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar{
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+.video{
+    display: none;
+}
+.about_quotes{
+    width: 80%;
+}
+.section_1 .container {
+display: block;
+}
+.section_1{
+    height: 150vh;
+}
+.section_1 .login_wrapper{
+    width: 40%;
+    top: 8%;
+    margin-left: 20%;
+}
+.section_1 .hero_content{
+    width: 70%;
+    margin-left: 10%;
+    top: 4%;
+}
+}
+
+@media only screen and (max-width: 650px) {
+    .sidebar{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section_1 .login_wrapper{
+        width: 60%;
+        margin-left: 10%;
+    }
+    #account_content{
+        display: none;
+    }
+
+    #menu a{
+        padding: 14px;
+    }
+
+    #account_logo .fa{
+        font-size: 20px;
+        padding: 10px 3px 10px 12px;
+        border-radius: 50%;
+    }
+
+    #fa {
+        margin-top: 10px;
+    }
+
+    #sign_up_button{
+        display: none;
+    }
+    #log_in_button{
+        display: none;
+    }
+
+    nav #logo-container img {
+        display: block;
+        margin-left: 60%;
+        padding-top: 10px;
+
+    }
+}
