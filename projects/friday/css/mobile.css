@@ -101,11 +101,11 @@
 display: block;
 }
 .section_1{
-    height: 150vh;
+    height: 180vh;
 }
 .section_1 .login_wrapper{
     width: 40%;
-    top: 8%;
+    top: 10%;
     margin-left: 20%;
 }
 .section_1 .hero_content{
@@ -183,6 +183,10 @@ display: block;
         display: block;
         width: 70%;
         margin: auto;
+    }
+
+    #top-bar {
+        width: 100%;
     }
 
     
