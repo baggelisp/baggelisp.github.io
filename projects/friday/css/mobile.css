@@ -139,10 +139,14 @@ display: block;
     }
 
     .section_5 .contact_wrapper{
-        width: 100%;
+        width: 80%;
         padding: 0;
         margin: auto;
         display: block;
+    }
+
+    .section_5 .screen{
+        margin: auto;
     }
 }
 
