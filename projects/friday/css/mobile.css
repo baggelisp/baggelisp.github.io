@@ -155,4 +155,11 @@ display: block;
         padding-top: 10px;
 
     }
+    .section_2{
+        height: 120vh;
+    }
+
+    .separator{
+        width: 80%;
+    }
 }
