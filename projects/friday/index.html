@@ -3,17 +3,32 @@
 <head>
 	<title>Smart Home Application</title>
 	<meta charset="utf-8">
-    <meta name="description" content="Smart Home Application">
+    <meta name="description" content="Friday | Smart Home Application">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One" >
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/smooth_scrolling.js"></script>
     <script src="js/top_bar_scrolling.js"></script>
+    <script src="js/changing_sidebar_width.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body onload="check_sidebar();";>
@@ -28,6 +43,7 @@
         <div id="menu">
             <a href="" id="sign_up_button">Sign up</a>
             <a href="" id="log_in_button">Log in</a>
+            <a href="" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span id="account_content">Account</span></a>
         </div>
 
     </nav>
@@ -35,7 +51,7 @@
     <div class="content" style="background-color: #343434;">
         <div id="sidebar" >
                 <div class="sidebar_nav">
-                    <a href="#" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
+                    <a href="#home" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
                     <a href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
                     <a href="#rooms"><i class="fa fa-bed"></i>&ensp;Rooms</a>
                     <a href="#devices"><i class="fa fa-plug"></i>&ensp;Devices</a> 
@@ -53,7 +69,7 @@
 
 
 
-            <div class="section_1">
+            <div class="section_1" id="home">
                 <div class="color-overlay"></div>
                 <div class="container">
                     <div class="hero_content">
@@ -66,25 +82,37 @@
                     </div>
 
                     <div class="login_wrapper">
-                            <div class="login_box">
-                                    <h2>Log in</h2>
-                                    <form action="/action_page.php">
-                                    
-                                      <div class="log_in_container">
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
-                                    
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
-                                            
-                                        <button type="submit">Log in</button>
-                                        <label>
-                                          <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
-                                        </label>
-                                        <a class='forgot' href='#'>Forgot your password?</a>
-                                      </div>
-                                
-                                    </form>
-
+                        <div class="screen-header">
+                            <div class="screen-header-left">
+                                <div class="screen-header-button close"></div>
+                                <div class="screen-header-button maximize"></div>
+                                <div class="screen-header-button minimize"></div>
                             </div>
+                            <div class="screen-header-right">
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                                <div class="screen-header-ellipsis"></div>
+                            </div>
+                        </div>
+                        <div class="login_box">
+                            <h2>Log in</h2>
+                            <form action="/action_page.php">
+                            
+                                <div class="log_in_container">
+                                <input type="text" placeholder="Username" name="uname" required class="app-form-control">
+                            
+                                <input type="password" placeholder="Password" name="psw" required class="app-form-control">
+                                <div class="app-form-group buttons">
+                                    <button type="submit" class="app-form-button">Log in</button>
+                                </div>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
+                                </label>
+                                <a class='forgot' href='#'>Forgot your password?</a>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,13 +126,11 @@
                         <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
                         </p>
-                        <img src="images/about_logo.png" alt="">
+                        <img src="images/smart_home_small.jpg" alt="">
 
                     </div>
                     <div class="video">
-                        <h2>
-                            VIDEO
-                        </h2>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vxepshCh_Vo?start=20&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                     </div>
                 </div>
@@ -169,13 +195,13 @@
                     </div>
             </div>
             <div class="section_4" id="who_we_are">
-                    <h2 style="color:white;">Who we are</h2>
-                    <hr class="separator">
+                    <h2>Who we are</h2>
+                    <hr class="separator" style="border-top: 2px solid rgb(0, 0, 0);margin-bottom: 0;">
                     <div class="who_we_are_wrapper">
 
                         <div class="who_we_are_1">
                             <div class="info">
-                                <h2> Vangelis Spathonis</h2>
+                                <h3> Vangelis Spathonis</h3>
                                 <p>
                                     <span style="    font-weight: 900; font-size: 10px;">
                                             up1020434@upnet.gr
@@ -194,7 +220,7 @@
                         <div class="who_we_are_2">
                                 <div class="image_thanos"></div>
                                 <div class="info">
-                                        <h2>Thanasis Kalatheris</h2>
+                                        <h3>Thanasis Kalatheris</h3>
                                         <p>
                                             <span style="    font-weight: 900; font-size: 10px;">
                                                     up1020434@upnet.gr
@@ -241,7 +267,7 @@
                         <div class="screen-body-item left">
                             
                             
-                            <div class="mapouter" style="height: 370px;"><div class="gmap_canvas"><iframe width="350" height="350" id="gmap_canvas" src="https://maps.google.com/maps?q=38.288881%2C21.7874322&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;height:500px;width:522px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:522px;}</style></div>
+                            <div class="mapouter" style="height: 350px;width: 25%"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=38.288881%2C21.7874322&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;height:500px;width:522px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:522px;}</style></div>
 
 
                             <div class="app-contact">CONTACT INFO : Patra, Greece</div>
@@ -272,7 +298,7 @@
                 <div class="footer_row">
                     <div class="footer_col_1">
                         <a href="https://www.upatras.gr/el" ><img src="images\university_patras.png"></a>
-                        <a  href="https://hci.ece.upatras.gr/" ><img src="images\hci.png"></a>
+                        <a  href="https://hci.ece.upatras.gr/" ><img src="images\hci_group_white.png"></a>
                     </div>
                     <div class="footer_col_2">
                         <h2>Links</h2>
@@ -301,9 +327,15 @@
                     </div>
                     <div class="footer_col_4">
                         <h2>Information</h2>
-                        <p>
-                            Vangelis Spathonis <br> Thanasis Kalatheris <br> University Of Patras <br>
-                            Department of Electrical and Computer Engineering <br>
+                        <p><i class="fa fa-user" aria-hidden="true"></i>&ensp;
+                            Vangelis Spathonis <br> 
+                            <i class="fa fa-user" aria-hidden="true"></i>&ensp;
+                            Thanasis Kalatheris <br> 
+                            <i class="fa fa-university" aria-hidden="true"></i>&ensp;
+                            University Of Patras <br>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;
+                            Electrical and Computer Engineering <br>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;
                             Patra, Greece
                         </p>
 
