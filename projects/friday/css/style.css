@@ -612,7 +612,7 @@ display: grid;
 }
 
 .section_4 .info{
-    width: 60%;
+    width: 100%;
     text-align: left;
     padding: 5%;
 
@@ -626,6 +626,7 @@ display: grid;
     margin: 5% 5% 5% 0%;
     background-position: center;
     background-size: contain;
+    float: right;
 }
 .image_thanos{
   background-image: url(../images/person.jpg);
@@ -635,6 +636,7 @@ display: grid;
     margin: 5% 0% 5% 5%;
     background-position: center;
     background-size: contain;
+    float: left;
 }
 
 .who_we_are_wrapper .fa{
