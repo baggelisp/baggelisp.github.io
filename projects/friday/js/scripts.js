@@ -14,7 +14,7 @@ function check_sidebar(){
 
 function toggleNav(){
     navSize = document.getElementById("sidebar").style.left;
-    if (navSize == "" || navSize=="-15%"){
+    if (navSize == "" || navSize<"0"){
       return open();
     }
     else{
@@ -23,15 +23,60 @@ function toggleNav(){
 }
 function open() {
   open_sidebar = true;
-  document.getElementById("main").style.width = "85%";
-  document.getElementById("main").style.cssFloat ="right";
+
+//change sidebar and main width
+  win_width=$(window).width();
   document.getElementById("sidebar").style.left="0%";
+  document.getElementById("main").style.cssFloat ="right";
+  if (win_width<500){
+    document.getElementById("sidebar").style.width="60%";
+  }
+  else if(win_width<650){
+    document.getElementById("main").style.width = "60%";
+    document.getElementById("sidebar").style.width="40%";
+  }
+  else if(win_width<800){
+    document.getElementById("main").style.width = "75%";
+    document.getElementById("sidebar").style.width="25%";
+  }
+  else if(win_width<1023){
+    document.getElementById("main").style.width = "80%";
+    document.getElementById("sidebar").style.width="20%";
+  }
+  else{
+    document.getElementById("main").style.width = "85%";
+    document.getElementById("sidebar").style.width="15%";
+  }
+
+
+  
+  
 
 }
 function close() {
   open_sidebar = false;
-  document.getElementById("main").style.width = "100%";
+  
   document.getElementById("sidebar").style.left="-15%";
+
+  if (win_width<500){
+    document.getElementById("sidebar").style.width="15%";
+  }
+  else if(win_width<650){
+    document.getElementById("main").style.width = "100%";
+    document.getElementById("sidebar").style.width="15%";
+  }
+  else if(win_width<800){
+    document.getElementById("main").style.width = "100%";
+    document.getElementById("sidebar").style.width="15%";
+  }
+  else if(win_width<1023){
+    document.getElementById("main").style.width = "100%";
+    document.getElementById("sidebar").style.width="15%";
+  }
+  else{
+    document.getElementById("main").style.width = "100%";
+    document.getElementById("sidebar").style.width="15%";
+  }
 
 }
 
