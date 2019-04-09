@@ -185,10 +185,16 @@ display: block;
     #log_in_button{
         display: none;
     }
-
+    nav #logo-container{
+        width: 50%;
+    }
+    
+    #logo{
+        margin-left: calc(100% - 120px);
+    }
     nav #logo-container img {
         display: block;
-        margin-right: calc(50% - 120px);
+        
         padding-top: 10px;
 
     }
@@ -214,7 +220,7 @@ display: block;
     }
 
     #top-bar {
-        width: 100%;
+        width: 100vw;
     }
 
     .who_we_are_1 , .who_we_are_2 {
@@ -232,11 +238,13 @@ display: block;
         float: none;
     }
 
-    .info{
+    .section_4 .info{
         text-align: center;
+        width: 100%;
+        font-size: 4vw;
     }
 
-    .info p ,.info h3{
+    .section_4 .info p ,.info h3{
         text-align: left;
     }
 
