@@ -34,8 +34,6 @@ nav {
     height: 80px;
 }
 
-#logo{
-}
 nav #logo-container {
     float: left;
     vertical-align: center;
@@ -131,6 +129,11 @@ nav #logo-container img {
 /****************** SIDEBAR ***********************/
 
 
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 
 #sidebar {
     width: 15%;
@@ -144,10 +147,7 @@ nav #logo-container img {
   overflow-x: hidden;
   /*overflow: auto;*/
   }
-  ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
+  
   
 #sidebar a {
     color: #fff;
@@ -612,9 +612,9 @@ display: grid;
 }
 
 .section_4 .info{
-    width: 100%;
     text-align: left;
     padding: 5%;
+    width: calc(90% - 200px);
 
 }
 
