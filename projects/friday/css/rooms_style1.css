@@ -1,0 +1,34 @@
+.section_1 {
+  height: calc(100vh);
+  background: white;
+}
+
+#top-bar {
+  background: black;
+}
+
+.rooms-container {
+  height: -webkit-fill-available;
+  padding-top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: DodgerBlue;
+  color: black;
+  -webkit-flex-flow: row wrap;
+}
+
+.room_box {
+  background: tomato;
+  padding: 5px;
+  width: 25%;
+  height: 35%;
+  line-height: 40vh;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin: 0 3.8415%;
+  margin: 0 3.78%;
+  margin: 0 3.5%;
+}

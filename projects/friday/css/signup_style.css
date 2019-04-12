@@ -1,0 +1,279 @@
+/****************** Main ***********************/
+
+.content {
+  width: 100%;
+}
+
+/* Animations */
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translate(0%, -50%) scale(.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Section 1 */
+
+.section_1 {
+  background: #000 url(../images/home5.jpg);
+  height: 110vh;
+  /*DES EDW!!!!!!!!!!!!!!!! */
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 80px 0 80px 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .6;
+  position: absolute;
+}
+
+.contact_wrapper {
+  width: 70%;
+  height: 100%;
+  margin: 5% 10%;
+}
+
+.contact_wrapper {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.signup-screen {
+  position: relative;
+  background: #1c1d1d;
+  border-radius: 15px;
+}
+
+.signup-screen:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.signup-screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #141414;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.signup-screen-header-left {
+  margin-right: auto;
+}
+
+.signup-screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.signup-screen-header-button.close {
+  background: #ed1c6f;
+}
+
+.signup-screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.signup-screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.signup-screen-header-right {
+  display: flex;
+}
+
+.signup-screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.signup-screen-body {
+  display: flex;
+  width: 100%;
+}
+
+.signup-screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.signup-screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-right: 0px;
+}
+
+.signup-app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #8BC34A;
+  font-size: 26px;
+  padding-top: 20px;
+}
+
+.signup-app-title p {
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.signup-app-title:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #8BC34A;
+}
+
+/* 
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: #888;
+} */
+
+.signup-form-group {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.signup-form-group.message {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.signup-form-group.buttons {
+  width: 100%;
+  margin-bottom: 0;
+  text-align: end;
+}
+
+.signup-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.signup-form-control-name {
+  display: inline-block;
+  width: 49.5%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.signup-form-control::placeholder {
+  color: #666;
+}
+
+.signup-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.signup-form-button {
+  background: none;
+  border: none;
+  color: #8BC34A;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.signup-form-button:hover {
+  color: #37923b;
+}
+
+.signup-form {
+  padding-top: 40px;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+input[type="password"]{
+  margin: 0;
+}
+
+@media screen and (max-width: 920px) {
+  .signup-screen-body-item.left {
+    margin-bottom: 30px;
+  }
+  .signup-form-control-name {
+    width: 100%;
+  }
+  .signup-app-title {
+    padding-top: 20px;
+  }
+  .signup-app-title:after {
+    display: none;
+  }
+  .signup-screen-body {
+    box-sizing: border-box;
+    padding: 40px;
+  }
+  .signup-screen-body-item {
+    padding: 0;
+  }
+  .signup-form-control-name:nth-child(2){
+    margin-top: 40px;
+
+  }
+}
+
+/* 
+@media screen and (max-width: 600px) {
+  .signup-screen-body {
+    box-sizing: border-box;
+    padding: 40px;
+  }
+  .signup-screen-body-item {
+    padding: 0;
+  }
+} */

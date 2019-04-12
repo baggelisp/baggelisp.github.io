@@ -1,0 +1,108 @@
+.section_1 {
+  height: auto;
+  background: white;
+}
+
+#top-bar {
+  background: black;
+}
+
+.rooms-container {
+  padding: 90px 0;
+  width: 100%;
+}
+
+.rooms-container h2 {
+  color: #525252;
+  text-align: center;
+  font-size: 2em;
+}
+
+.rooms-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.room_box {
+  border-radius: 20%;
+  background: #525252;
+  float: left;
+  width: 15.5%;
+  margin: 20px 6.916%;
+  padding: 2%;
+  height: 50vh;
+  /* Should be removed. Only for demonstration */
+}
+
+.room_inside {
+  background: white;
+  width: 100%;
+  border-radius: 20%;
+  text-align: center;
+  color: #525252;
+  height: 100%;
+}
+
+.room_inside i {
+  position: relative;
+  
+}
+
+.room_inside .fa {
+  position: relative;
+  
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+.room_inside h3 {
+  font-size: 30px;
+  word-wrap: break-word;
+}
+
+.rooms-container .group_elements {
+  height: 100%;
+  position: relative;
+  padding-top: 40%;
+}
+
+.rooms-container .room_box:hover {
+  box-shadow: 0px 0px 29px 1px rgba(82, 82, 82, 1);
+}
+
+.separator {
+  width: 30%;
+  border: none;
+  border-top: 2px solid #525252;
+}
+
+
+
+  /* Mobile */
+
+  @media only screen and (max-width: 1000px) {
+
+    .room_box {
+
+      width: 20%;
+      margin: 20px 13%;
+      padding: 2%;
+    }
+
+    .separator {
+      margin-bottom: 30px;
+    }
+    
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    .room_box {
+
+      width: 60%;
+      margin: 20px 18%;
+      padding: 2%;
+    }
+    
+  }

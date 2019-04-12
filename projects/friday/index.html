@@ -1,25 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Smart Home Application</title>
-	<meta charset="utf-8">
+    <title>Smart Home Application</title>
+    <meta charset="utf-8">
     <meta name="description" content="Friday | Smart Home Application">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
     <script src="js/scripts.js"></script>
@@ -27,227 +24,70 @@
     <script src="js/smooth_scrolling.js"></script>
     <script src="js/top_bar_scrolling.js"></script>
     <script src="js/changing_sidebar_width.js"></script>
+    
+
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body onload="check_sidebar();";>
+<body onload="check_sidebar();" ;>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    
     <nav id="top-bar">
 
         <div id="logo-container">
-            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="toggleNav()"><i class="fas fa-bars" id="fa"></i></button>
-            <a id="logo" href="index.html" ><img src="images\hero_logo.png"></a>
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="toggleNav()"><i class="fas fa-bars"
+                    id="fa"></i></button>
+            <a id="logo" href="index.html"><img src="images\hero_logo.png"></a>
         </div>
-        
+
 
         <div id="menu">
             <a href="signup.html" id="sign_up_button">Sign up</a>
             <a href="" id="log_in_button">Log in</a>
-            <a href="" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span id="account_content">Account</span></a>
+            <a href="" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span
+                    id="account_content">Account</span></a>
         </div>
 
     </nav>
 
     <div class="content" style="background-color: #343434;">
-        <div id="sidebar" >
-                <div class="sidebar_nav">
-                    <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
-                    <a href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
-                    <a href="#rooms"><i class="fa fa-bed"></i>&ensp;Rooms</a>
-                    <a href="#devices"><i class="fa fa-plug"></i>&ensp;Devices</a> 
-                    <a href="#cameras"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
-                    <a href="#settings"><i class="fa fa-wrench"></i>&ensp;Settings</a>
-                    <a href="#history"><i class="fa fa-history"></i>&ensp;History</a>
-                    <a href="#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
-                    <a href="#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
-                    <a href="#who_we_are"><i class="fa fa-address-card"></i>&ensp;Who we are</a>
-                    <a href="index.html#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
-                </div>
-            </div> 
+        <div id="sidebar">
+            <div class="sidebar_nav">
+                <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
+                <a id="dashboard" href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
+                <a id="rooms" href="rooms.html"><i class="fa fa-bed"></i>&ensp;Rooms</a>
+                <a id="devices" href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
+                <a id="cameras" href="cameras.html"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                <a id="history" href="#history"><i class="fa fa-history"></i>&ensp;History</a>
+                <a href="#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
+                <a href="#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
+                <a href="#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
+                <a href="index.html#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
+                
+            </div>
         </div>
-        <div id="main">
+    </div>
+    <div id="main">
 
 
 
-            <div class="section_1" id="home">
-                <div class="color-overlay"></div>
-                <div class="container">
-                    <div class="hero_content">
-                        <h1>Friday</h1>
-                        <h3>Revolutionary Smart Home App</h3>
-                        <div id="hero_menu">
-                                <a href="signup.html" id="hero_sign_up_button">Sign up</a>
-                                <a href="#about" id="hero_explore_button"><span>Explore </span></a>
-                        </div>
-                    </div>
-
-                    <div class="login_wrapper">
-                        <div class="screen-header">
-                            <div class="screen-header-left">
-                                <div class="screen-header-button close"></div>
-                                <div class="screen-header-button maximize"></div>
-                                <div class="screen-header-button minimize"></div>
-                            </div>
-                            <div class="screen-header-right">
-                                <div class="screen-header-ellipsis"></div>
-                                <div class="screen-header-ellipsis"></div>
-                                <div class="screen-header-ellipsis"></div>
-                            </div>
-                        </div>
-                        <div class="login_box">
-                            <h2>Log in</h2>
-                            <form action="/action_page.php">
-                            
-                                <div class="log_in_container">
-                                <input type="text" placeholder="Username" name="uname" required class="app-form-control">
-                            
-                                <input type="password" placeholder="Password" name="psw" required class="app-form-control">
-                                <div class="app-form-group buttons">
-                                    <button type="submit" class="app-form-button">Log in</button>
-                                </div>
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
-                                </label>
-                                <a class='forgot' href='#'>Forgot your password?</a>
-                                </div>
-                            </form>
-
-                        </div>
+        <div class="section_1" id="home">
+            <div class="color-overlay"></div>
+            <div class="container">
+                <div class="hero_content">
+                    <h1>Friday</h1>
+                    <h3>Revolutionary Smart Home App</h3>
+                    <div id="hero_menu">
+                        <a href="signup.html" id="hero_sign_up_button">Sign up</a>
+                        <a href="#about" id="hero_explore_button"><span>Explore </span></a>
                     </div>
                 </div>
-            </div>
 
-            <div class="section_2" id="about">
-                <h2>Friday. Web app for home automation</h2>
-                <h4>Friday is a web interface that lets you control and monitor your home.<br>Control all your smart appliances</h4>
-            
-                <div class="about_wrapper">
-                    <div class="about_quotes">
-                        <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                        <img src="images/smart_home_small.jpg" alt="">
-
-                    </div>
-                    <div class="video">
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/vxepshCh_Vo?start=20&autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                    </div>
-                </div>
-            
-            </div>
-
-            <div class="section_3" id="services">
-                    
-
-                    <div class="services_wrapper">
-                        <h2>Services</h2>
-                        <hr class="separator">
-                        <div class="services_row">
-                            <div class="services_col_1_row_1">
-                                <i class="fa fa-lock" aria-hidden="true"></i>
-                                <h2>Security</h2>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </p>
-                            </div>
-                            <div class="services_col_2_row_1">
-                                <i class="fa fa-toggle-off" aria-hidden="true"></i>
-                                <h2>Control</h2>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </p>
-                            </div>
-                            <div class="services_col_3_row_1">
-                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
-                                <h2>Monitor</h2>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </p>
-                            </div>
-                        </div>
-                        <h2>Devices</h2>
-                        <hr class="separator">
-                        <div class="services_row">
-                                <div class="services_col_1_row_1">
-                                    <i class="fa fa-thermometer-half" aria-hidden="true"></i>
-                                    <h2>Thermometer</h2>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                                <div class="services_col_2_row_1">
-                                    <i class="fa fa-video-camera" aria-hidden="true"></i>
-                                    <h2>Cameras</h2>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                                <div class="services_col_3_row_1">
-                                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                                    <h2>Lightbulb</h2>
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                    </p>
-                                </div>
-                        </div>
-
-                    </div>
-            </div>
-            <div class="section_4" id="who_we_are">
-                    <h2>Who we are</h2>
-                    <hr class="separator" style="border-top: 2px solid rgb(0, 0, 0);margin-bottom: 0;">
-                    <div class="who_we_are_wrapper">
-
-                        <div class="who_we_are_1">
-                            <div class="image_baggos"></div>
-                            <div class="info">
-                                    
-                                <h3> Vangelis Spathonis</h3>
-                                <p>
-                                    <span style="    font-weight: 900; font-size: 10px;">
-                                            up1020434@upnet.gr
-                                    </span> <br><br>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                                </p>
-                                <a href="#" class="fa fa-facebook"></a>
-                                <a href="#" class="fa fa-twitter"></a>
-                                <a href="#" class="fa fa-linkedin"></a>
-                                <a href="#" class="fa fa-instagram"></a>
-
-                            </div>
-                            
-
-                        </div>
-                        <div class="who_we_are_2">
-                                <div class="image_thanos"></div>
-                                <div class="info">
-                                        <h3>Thanasis Kalatheris</h3>
-                                        <p>
-                                            <span style="    font-weight: 900; font-size: 10px;">
-                                                    up1020434@upnet.gr
-                                            </span> <br><br>
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries
-                                        </p>
-                                        <a href="#" class="fa fa-facebook"></a>
-                                        <a href="#" class="fa fa-twitter"></a>
-                                        <a href="#" class="fa fa-linkedin"></a>
-                                        <a href="#" class="fa fa-instagram"></a>
-        
-                                    </div>
-                            
-
-                        </div>
-
-
-                    </div>
-
-            </div>
-
-            <div class="section_5" id="contact">
-                <div class="contact_wrapper">
-                    <div class="screen">
-                        <div class="screen-header">
+                <div class="login_wrapper">
+                    <div class="screen-header">
                         <div class="screen-header-left">
                             <div class="screen-header-button close"></div>
                             <div class="screen-header-button maximize"></div>
@@ -258,26 +98,230 @@
                             <div class="screen-header-ellipsis"></div>
                             <div class="screen-header-ellipsis"></div>
                         </div>
-                        </div>
-                        <div class="app-title">
-                                <span>CONTACT US</span>
-                                <p>
-                                    Feel free to drop us a line below!
-                                </p>
+                    </div>
+                    <div class="login_box">
+                        <h2>Log in</h2>
+                        <form action="/action_page.php">
+
+                            <div class="log_in_container">
+                                <input type="text" placeholder="Username" name="uname" required
+                                    class="app-form-control">
+
+                                <input type="password" placeholder="Password" name="psw" required
+                                    class="app-form-control">
+                                <div class="app-form-group buttons">
+                                    <button type="submit" class="app-form-button">Log in</button>
                                 </div>
-                        <div class="screen-body">
-                            <div class="screen-body-item left">
-                                
-                                
-                                <div class="mapouter" style="height: 350px;width: 25%"><div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=38.288881%2C21.7874322&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;height:500px;width:522px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:522px;}</style></div>
-
-
-                                <div class="app-contact">CONTACT INFO : Patra, Greece</div>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" id="remember"> Remember me
+                                </label>
+                                <a class='forgot' href='forgot_password.html'>Forgot your password?</a>
                             </div>
-                            <div class="screen-body-item">
-                                <div class="app-form">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section_2" id="about">
+            <h2>Friday. Web app for home automation</h2>
+            <h4>Friday is a web interface that lets you control and monitor your home.<br>Control all your smart
+                appliances</h4>
+
+            <div class="about_wrapper">
+                <div class="about_quotes">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged.
+                    </p>
+                    <img src="images/smart_home_small.jpg" alt="">
+
+                </div>
+                <div class="video">
+                    <iframe width="100%" height="315"
+                        src="https://www.youtube.com/embed/vxepshCh_Vo?start=20&autoplay=1&mute=1&loop=1"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section_3" id="services">
+
+
+            <div class="services_wrapper">
+                <h2>Services</h2>
+                <hr class="separator">
+                <div class="services_row">
+                    <div class="services_col_1_row_1">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                        <h2>Security</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    <div class="services_col_2_row_1">
+                        <i class="fa fa-toggle-off" aria-hidden="true"></i>
+                        <h2>Control</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    <div class="services_col_3_row_1">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        <h2>Monitor</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+                <h2>Devices</h2>
+                <hr class="separator">
+                <div class="services_row">
+                    <div class="services_col_1_row_1">
+                        <i class="fa fa-thermometer-half" aria-hidden="true"></i>
+                        <h2>Thermometer</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    <div class="services_col_2_row_1">
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        <h2>Cameras</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                    <div class="services_col_3_row_1">
+                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                        <h2>Lightbulb</h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="section_4" id="team">
+            <h2>Team</h2>
+            <hr class="separator" style="border-top: 2px solid rgb(0, 0, 0);margin-bottom: 0;">
+            <div class="team_wrapper">
+
+                <div class="team_1">
+                    <div class="image_baggos"></div>
+                    <div class="info">
+
+                        <h3> Vangelis Spathonis</h3>
+                        <p>
+                            <span style="    font-weight: 900; font-size: 10px;">
+                                up1020434@upnet.gr
+                            </span> <br><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries
+                        </p>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+
+                    </div>
+
+
+                </div>
+                <div class="team_2">
+                    <div class="image_thanos"></div>
+                    <div class="info">
+                        <h3>Thanasis Kalatheris</h3>
+                        <p>
+                            <span style="    font-weight: 900; font-size: 10px;">
+                                up1020434@upnet.gr
+                            </span> <br><br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has survived not only five
+                            centuries
+                        </p>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="section_5" id="contact">
+            <div class="contact_wrapper">
+                <div class="screen">
+                    <div class="screen-header">
+                        <div class="screen-header-left">
+                            <div class="screen-header-button close"></div>
+                            <div class="screen-header-button maximize"></div>
+                            <div class="screen-header-button minimize"></div>
+                        </div>
+                        <div class="screen-header-right">
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                            <div class="screen-header-ellipsis"></div>
+                        </div>
+                    </div>
+                    <div class="app-title">
+                        <span>CONTACT US</span>
+                        <p>
+                            Feel free to drop us a line below!
+                        </p>
+                    </div>
+                    <div class="screen-body">
+                        <div class="screen-body-item left">
+
+
+                            <div class="mapouter" style="height: 350px;width: 25%">
+                                <div class="gmap_canvas"><iframe width="300" height="300" id="gmap_canvas"
+                                        src="https://maps.google.com/maps?q=38.288881%2C21.7874322&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        height: 500px;
+                                        width: 522px;
+                                    }
+
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 522px;
+                                    }
+                                </style>
+                            </div>
+
+
+                            <div class="app-contact">CONTACT INFO : Patra, Greece</div>
+                        </div>
+                        <div class="screen-body-item">
+                            <div class="app-form">
                                 <div class="app-form-group">
-                                    <input class="app-form-control" placeholder="NAME" >
+                                    <input class="app-form-control" placeholder="NAME">
                                 </div>
                                 <div class="app-form-group">
                                     <input class="app-form-control" placeholder="EMAIL">
@@ -290,76 +334,68 @@
                                 </div>
                             </div>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
-
-
-            <div class="footer">
-                <div class="footer_row">
-                    <div class="footer_col_1">
-                        <a href="https://www.upatras.gr/el" ><img src="images\university_patras.png"></a>
-                        <a  href="https://hci.ece.upatras.gr/" ><img src="images\hci_group_white.png"></a>
-                    </div>
-                    <div class="footer_col_2">
-                        <h2>Links</h2>
-                        <ul>
-                            
-                            <li><a href="#" >Home</a></li>
-                            <li><a href="#about" >About</a></li>
-                            <li><a href="#servises" >Services</a></li>
-                            <li><a href="#who_we_are" >Who we are</a></li>
-                            <li><a href="#contact" >Contact</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="footer_col_3">
-                        <h2>Application</h2>
-                        <ul>
-                            
-                            <li><a href="#dashboard" >Dashboard</a></li>
-                            <li><a href="#rooms" >Rooms</a></li>
-                            <li><a href="#devices" >Devices</a></li>
-                            <li><a href="#cameras" >Cameras</a></li>
-                            <li><a href="#settings" >Settings</a></li>
-                            <li><a href="#history" >History</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="footer_col_4">
-                        <h2>Information</h2>
-                        <p><i class="fa fa-user" aria-hidden="true"></i>&ensp;
-                            Vangelis Spathonis <br> 
-                            <i class="fa fa-user" aria-hidden="true"></i>&ensp;
-                            Thanasis Kalatheris <br> 
-                            <i class="fa fa-university" aria-hidden="true"></i>&ensp;
-                            University Of Patras <br>
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;
-                            Electrical and Computer Engineering <br>
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;
-                            Patra, Greece
-                        </p>
-
-                    </div>
-                </div>
-                <p id="copyright">&copy; 2019 University Of Patras<p>
-            </div>
-
-            
         </div>
+
+
+        <div class="footer">
+            <div class="footer_row">
+                <div class="footer_col_1">
+                    <a href="https://www.upatras.gr/el"><img src="images\university_patras.png"></a>
+                    <a href="https://hci.ece.upatras.gr/"><img src="images\hci_group_white.png"></a>
+                </div>
+                <div class="footer_col_2">
+                    <h2>Links</h2>
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#servises">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer_col_3">
+                    <h2>Application</h2>
+                    <ul>
+
+                        <li><a href="#dashboard">Dashboard</a></li>
+                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="#devices">Devices</a></li>
+                        <li><a href="#cameras">Cameras</a></li>
+                        <li><a href="#settings">Settings</a></li>
+                        <li><a href="#history">History</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer_col_4">
+                    <h2>Information</h2>
+                    <p><i class="fa fa-user" aria-hidden="true"></i>&ensp;
+                        Vangelis Spathonis <br>
+                        <i class="fa fa-user" aria-hidden="true"></i>&ensp;
+                        Thanasis Kalatheris <br>
+                        <i class="fa fa-university" aria-hidden="true"></i>&ensp;
+                        University Of Patras <br>
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;
+                        Electrical and Computer Engineering <br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>&ensp;
+                        Patra, Greece
+                    </p>
+
+                </div>
+            </div>
+            <p id="copyright">&copy; 2019 University Of Patras<p>
+        </div>
+
+
+    </div>
     </div>
 
 
-    
+
 </body>
 
 </html>
-
-
-
-
-
-
-
-

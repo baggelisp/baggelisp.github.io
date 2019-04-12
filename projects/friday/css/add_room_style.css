@@ -1,0 +1,73 @@
+.section_1 {
+    height: 100vh;
+    background: white;
+    color: #525252;
+  }
+  
+  #top-bar {
+    background: black;
+  }
+  
+  .container {
+    padding: 90px 5% 0 5%;
+    width: 90%;
+    height: auto;
+  }
+  
+  .form_container {
+    height: auto;
+    ;
+    margin: 40px auto 0 auto;
+  }
+  
+  .device_option {
+    color: #525252;
+    width: 100%;
+    border: 1px solid #ccc;
+    font-family: FontAwesome;
+    font-style: normal;
+  }
+  
+  .form_container button {
+    background: #8BC34A;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+  .form_container button:hover {
+    background: #4a8a00;
+  }
+  
+  .form_container p {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  select {
+    background-color: white;
+    border: none;
+    outline: none;
+    font: 400 13.3333px Arial;
+    
+  }
+  
+  option{
+    color: #525252;
+    font-family: FontAwesome;
+    font-style: normal;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

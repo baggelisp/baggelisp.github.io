@@ -1,0 +1,172 @@
+.section_1 {
+    height: auto;
+    background: white;
+    color: #525252;
+  }
+  
+  #top-bar {
+    background: black;
+  }
+  
+  .room-container {
+    padding: 90px 5%;
+    width: 90%;
+  }
+  
+  .room-container h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 30px 0;
+    
+  }
+
+  .room-container h3 {
+    font-size: 1.8em;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  
+  .room-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+.separator {
+    width: 30%;
+    border: none;
+    border-top: 2px solid #525252;
+    margin: 0 auto;
+  }
+
+  .device_section{
+      width: 100%;
+      height: auto;
+      margin: 30px 0;
+  }
+
+
+  /* Switch */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #525252;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #8BC34A;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #8BC34A;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+   /* End */
+
+
+   .device_group h3 i{
+    font-size: 40px;
+
+   }
+
+   .device_container{
+    width: 100%;
+   }
+
+   .device{
+    
+    border-radius: 20%;
+    float: left;
+    width: 10%;
+    margin: 10px 3.5%;
+    padding: 1.5%;
+    background: #9c9c9c94;
+    height: 160px;
+    text-align: center;
+
+   }
+   .device p{
+    word-wrap: break-word;
+   }
+
+   .device .fa {
+    font-size: 50px;
+    width: 100%;
+    color: #525252;
+  }
+
+  a{
+      color: #525252;
+  }
+  #add_device:hover {
+    box-shadow: 0px 0px 29px 1px rgba(82, 82, 82, 1);
+  }
+
+
+  /* Mobile */
+
+  @media only screen and (max-width: 1000px) {
+
+    .device{
+        width: 15%;
+        margin: 10px 7.6666%;
+        padding: 1.5%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 550px) {
+
+    .device{
+        width: 25%;
+        margin: 10px 11%;
+        padding: 1.5%;
+    }
+    
+  }

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Smart Home Application</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Friday | Smart Home Application">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/room_style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/smooth_scrolling.js"></script>
+    <script src="js/changing_sidebar_width.js"></script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body onload="check_sidebar();" ;>
+    <nav id="top-bar">
+
+        <div id="logo-container">
+            <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="toggleNav()"><i class="fas fa-bars"
+                    id="fa"></i></button>
+            <a id="logo" href="index.html"><img src="images\hero_logo.png"></a>
+        </div>
+
+
+        <div id="menu">
+            <a href="signup.html" id="sign_up_button">Sign up</a>
+            <a href="" id="log_in_button">Log in</a>
+            <a href="" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span
+                    id="account_content">Account</span></a>
+        </div>
+
+    </nav>
+
+    <div class="content" style="background-color: #343434;">
+        <div id="sidebar">
+            <div class="sidebar_nav">
+                <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
+                <a href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
+                <a href="#rooms"><i class="fa fa-bed"></i>&ensp;Rooms</a>
+                <a href="#devices"><i class="fa fa-plug"></i>&ensp;Devices</a>
+                <a href="#cameras"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                <a href="#settings"><i class="fa fa-wrench"></i>&ensp;Settings</a>
+                <a href="#history"><i class="fa fa-history"></i>&ensp;History</a>
+                <a href="#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
+                <a href="#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
+                <a href="#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
+                <a href="index.html#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class='section_1'>
+
+            <div class="room-container">
+                <h2>Living room</h2>
+                <hr class="separator">
+                <!-- Lights-->
+                <div class="device_section">
+                    <h3>
+                        Lights
+                    </h3>
+                    <div class="device_container">
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 1</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 2</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 3</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 4</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 5</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 6</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            <p>Light 7</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <a href="add_device.html">
+                            <div class="device" id="add_device">
+                                <p>Add light</p>
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sockets-->
+                <div class="device_section">
+                    <h3>
+                        Sockets
+                    </h3>
+                    <div class="device_container">
+                        <div class="device">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                            <p>Socket 1</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                            <p>Socket 2</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                            <p>Socket 3</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-plug" aria-hidden="true"></i>
+                            <p>Socket 4</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <a href="add_device.html">
+                            <div class="device" id="add_device">
+                                <p>Add Socket</p>
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- Cameras-->
+                <div class="device_section">
+                    <h3>
+                        Cameras
+                    </h3>
+                    <div class="device_container">
+                        <div class="device">
+                            <i class="fa fa-video-camera" aria-hidden="true"></i>
+                            <p>Camera 1</p>
+
+                        </div>
+                        <div class="device_container">
+                            <div class="device">
+                                <i class="fa fa-video-camera" aria-hidden="true"></i>
+                                <p>Camera 1</p>
+
+                            </div>
+                            <a href="add_device.html">
+                                <div class="device" id="add_device">
+                                    <p>Add Camera</p>
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Miscellaneous-->
+                <div class="device_section">
+                    <h3>
+                        Miscellaneous
+                    </h3>
+                    <div class="device_container">
+                        <div class="device">
+                            <i class="fa fa-thermometer-three-quarters" aria-hidden="true"></i>
+                            <p>Thermometer</p>
+                            <p>30 &#8451;</p>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-tint" aria-hidden="true"></i>
+                            <p>Humidity sensor</p>
+                            <p>67%</p>
+                        </div>
+                        <div class="device">
+                            <i class="fa fa-tint" aria-hidden="true"></i>
+                            <p>Raindrop Sensor</p>
+
+                        </div>
+                        <a href="add_device.html">
+                            <div class="device" id="add_device">
+                                <p>Add</p>
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer" style="height:auto">
+                <p id="copyright">&copy; 2019 University Of Patras<p>
+            </div>
+        </div>
+</body>
+
+</html>
