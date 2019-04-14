@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/signup.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/signup_style.css">
+    <link rel="stylesheet" type="text/css" href="css/account_page_style.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -25,9 +26,28 @@
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/top_bar_scrolling.js"></script>
+    <script src="js/changing_sidebar_width.js"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
+
+<style>
+    @media only screen and (max-width: 925px) {
+
+        .signup-form-control-name {
+            margin: 40px 0 0 0 !important;
+        }
+
+        .img_container {
+            width: 150px;
+        }
+
+        .signup-form-group a {
+            margin-left: 70%;
+        }
+
+    }
+</style>
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -69,9 +89,9 @@
 
 
 
-        <div class='section_1' style="height: 100vh;">
+        <div class='section_1' style="height: auto;">
             <div class="contact_wrapper">
-                <div class="screen" style="top: 20vh;">
+                <div class="screen">
                     <div class="screen-header">
                         <div class="screen-header-left">
                             <div class="screen-header-button close"></div>
@@ -85,20 +105,39 @@
                         </div>
                     </div>
                     <div class="app-title" style="text-align:center">
-                        <span>Put your e-mail</span>
-                        <!-- <p>
-                                        Feel free to drop us a line below!
-                                    </p> -->
+                        <span>Account</span>
                     </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item">
-                            <div class="app-form" style="padding-top:0;">
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" type="email" placeholder="Email" required
+                    <div class="signup-screen-body">
+
+                        <!-- Here starts the form -->
+                        <!-- <div class="img_container"><img src="images/person.jpg"></div> -->
+                        <input class="img_container" type="image" src="images/person.jpg" style="border-radius: 50%;" />
+                        <input type="file" id="my_file" accept="image/*" style="display: none;" />
+                        <script>
+                            $("input[type='image']").click(function () {
+                                $("input[id='my_file']").click();
+                            });
+                        </script>
+
+                        <div class="signup-screen-body-item">
+                            <div class="signup-form">
+                                <div class="signup-form-group">
+                                    <input class="signup-form-control-name" placeholder="First Name" required
+                                        autocomplete="given-name" style="margin-right:5px;">
+                                    <input class="signup-form-control-name" placeholder="Last Name" required
+                                        autocomplete="family-name" style="margin-left: 5px; margin-top: 0;">
+                                </div>
+                                <div class="signup-form-group message">
+                                    <input class="signup-form-control" type="email" placeholder="Email" required
                                         autocomplete="mail">
                                 </div>
-                                <div class="app-form-group buttons">
-                                    <button class="app-form-button">SEND PASSWORD</button>
+                                <div class="signup-form-group message">
+                                    <input class="signup-form-control" type="uname" placeholder="Username" required
+                                        autocomplete="username">
+                                </div>
+                                <div class="signup-form-group buttons">
+                                    <a href="edit_account_page.html"><button class="signup-form-button"
+                                            href="edit_account_page.html">UPDATE</button></a>
                                 </div>
                             </div>
                         </div>

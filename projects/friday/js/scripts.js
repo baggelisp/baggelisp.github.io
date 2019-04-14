@@ -55,7 +55,7 @@ function open() {
 }
 function close() {
   open_sidebar = false;
-
+  win_width = $(window).width();
   document.getElementById("sidebar").style.left = "-15%";
 
   if (win_width < 500) {
@@ -87,7 +87,9 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
+    if ($(window).width() > 500) {
+      document.getElementById("myBtn").style.display = "block";
+    }
   } else {
     document.getElementById("myBtn").style.display = "none";
   }
@@ -95,8 +97,9 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  
-    $('body,html').animate({
-      scrollTop: 0
-    }, 800);
+
+  $('body,html').animate({
+    scrollTop: 0
+  }, 800);
 }
+

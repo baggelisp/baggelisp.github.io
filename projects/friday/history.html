@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="css/cameras_style.css">
+    <link rel="stylesheet" type="text/css" href="css/history_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,6 +22,10 @@
 
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="js/Chart.js"></script>
+
 
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -54,8 +58,8 @@
                 <a href="dashboard.html"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
                 <a href="rooms.html"><i class="fa fa-bed"></i>&ensp;Rooms</a>
                 <a href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
-                <a href="#"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
-                <a href="history.html"><i class="fa fa-history"></i>&ensp;History</a>
+                <a href="cameras.html"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                <a href="#"><i class="fa fa-history"></i>&ensp;History</a>
                 <a href="index.html#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
                 <a href="index.html#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
                 <a href="index.html#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
@@ -66,47 +70,42 @@
     <div id="main">
         <div class='section_1'>
 
-            <div class="cameras-container">
-                <h2>Cameras</h2>
+            <div class="history-container">
+                <h2>History</h2>
                 <hr class="separator">
-                <div class="camera_flexbox">
-                    <div class="camera_box">
-                        <h4>Camera 1 - Living room</h4>
-
-                    </div>
-                    <div class="camera_box">
-                        <h4>Camera 2 - Maria's Bedroom</h4>
-                    </div>
-                    <div class="camera_box">
-                        <h4>Camera 3 - Kitchen</h4>
-                    </div>
-                    <div class="camera_box">
-                        <h4>Camera 4 - Garden</h4>
-                    </div>
-                    <!-- <div class="camera_box">
-                        <h4>Camera 5</h4>
-                    </div> -->
-
-                    <a href="add_device.html" class="camera_box">
-                        <div>
-                            <div class="group_elements">
-                                <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                <h3 style="font-size:0.7em;">Add camera</h3>
-                            </div>
-                        </div>
-                    </a>
-
+                <h3>Temperature</h3>
+                <div class="graph_box">
+                    <canvas id="temperature_chart" width="100%" height="100%"></canvas>
+                    <br>
+                    <button id="addData_temperature" onclick="add_new_data_temperature();">Add Data</button>
                 </div>
-
-
+                <h3>Humidity</h3>
+                <div class="graph_box">
+                    <canvas id="humidity_chart" width="100%" height="100%"></canvas>
+                    <br>
+                    <button id="addData_humidity" onclick="add_new_data_humidity();">Add Data</button>
+                </div>
+                <h3>Rain</h3>
+                <div class="graph_box">
+                    <canvas id="rain_chart" width="100%" height="100%"></canvas>
+                    <br>
+                    <button id="addData_rain" onclick="add_new_data_rain();">Add Data</button>
+                </div>
             </div>
-            <div class="footer" style="height:auto">
-                <p id="copyright">&copy; 2019 University Of Patras<p>
-            </div>
+            <script src="js/humidity_graph.js"></script>
+            <script src="js/temperature_graph.js"></script>
+            <script src="js/rain_graph.js"></script>
 
 
 
         </div>
+        <div class="footer" style="height:auto">
+            <p id="copyright">&copy; 2019 University Of Patras<p>
+        </div>
+
+
+
+    </div>
 
 </body>
 

@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/signup.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/signup_style.css">
+    <link rel="stylesheet" type="text/css" href="css/account_page_style.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -41,18 +42,18 @@
 
 
         <div id="menu">
-            <a href="signup.html" id="sign_up_button">Sign up</a>
-            <a href="login.html" id="log_in_button">Log in</a>
-            <a href="account_page.html" id="account_logo"><i class="fa fa-user-circle-o"
-                    aria-hidden="true"></i>&ensp;<span id="account_content">Account</span></a>
-        </div>
+                <a href="signup.html" id="sign_up_button">Sign up</a>
+                <a href="login.html" id="log_in_button">Log in</a>
+                <a href="account_page.html" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span
+                        id="account_content">Account</span></a>
+            </div>
 
     </nav>
 
     <div class="content" style="background-color: #343434;">
         <div id="sidebar">
             <div class="sidebar_nav">
-                <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
+                    <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
                 <a id="dashboard" href="dashboard.html"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
                 <a id="rooms" href="rooms.html"><i class="fa fa-bed"></i>&ensp;Rooms</a>
                 <a id="devices" href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
@@ -69,9 +70,9 @@
 
 
 
-        <div class='section_1' style="height: 100vh;">
+        <div class='section_1' style="height: auto;">
             <div class="contact_wrapper">
-                <div class="screen" style="top: 20vh;">
+                <div class="screen">
                     <div class="screen-header">
                         <div class="screen-header-left">
                             <div class="screen-header-button close"></div>
@@ -85,20 +86,41 @@
                         </div>
                     </div>
                     <div class="app-title" style="text-align:center">
-                        <span>Put your e-mail</span>
-                        <!-- <p>
-                                        Feel free to drop us a line below!
-                                    </p> -->
+                        <span>Account</span>
                     </div>
-                    <div class="screen-body">
-                        <div class="screen-body-item">
-                            <div class="app-form" style="padding-top:0;">
-                                <div class="app-form-group message">
-                                    <input class="app-form-control" type="email" placeholder="Email" required
-                                        autocomplete="mail">
+                    <div class="signup-screen-body">
+
+                        <!-- Here starts the form -->
+                        <div class="img_container"><img src="images/person.jpg"></div>
+                        <div class="signup-screen-body-item">
+                            <div class="signup-form">
+                                <div class="signup-form-group">
+                                    <h6 class="signup-form-control-name">Name: <span id="name">Vangelis</span>
+                                    </h6>
+                                    <h6 class="signup-form-control-name">Surname <span id="lastname">Spathonis</span>
+                                    </h6>
                                 </div>
-                                <div class="app-form-group buttons">
-                                    <button class="app-form-button">SEND PASSWORD</button>
+                                <div class="signup-form-group">
+                                    <h6 class="signup-form-control-name">Username: <span id="username"> baggelisp</span>
+                                    </h6>
+                                    <h6 class="signup-form-control-name">Number of rooms: <span id="Nrooms">6</span>
+                                    </h6>
+                                </div>
+                                <div class="signup-form-group">
+                                    <h6 class="signup-form-control-name">Email: <span id="mail">
+                                            up123456@upnet.gr</span></h6>
+                                    <h6 class="signup-form-control-name">Number of devices: <span id="Nrooms">19</span>
+                                    </h6>
+                                </div>
+                                <div class="signup-form-group">
+                                    <h6 class="signup-form-control-name">Member since: <span id="member_since">
+                                            14 April 2019</span></h6>
+                                    <h6 class="signup-form-control-name">Number of cameras: <span id="Nrooms">3</span>
+                                    </h6>
+                                </div>
+                                <div class="signup-form-group buttons">
+                                    <a href="edit_account_page.html"><button class="signup-form-button"
+                                            href="edit_account_page.html">EDIT</button></a>
                                 </div>
                             </div>
                         </div>

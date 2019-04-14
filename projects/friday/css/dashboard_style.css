@@ -1,0 +1,471 @@
+.section_1 {
+    height: auto;
+    background: white;
+    padding-top: 80px;
+    color: #525252;
+}
+
+#top-bar {
+    background: black;
+}
+
+.dashboard_container {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.dashboard_container h2 {
+    color: #525252;
+    text-align: center;
+    font-size: 2em;
+}
+
+.dashboard_container h3 {
+    color: #525252;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.dashboard_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.separator {
+    width: 30%;
+    border: none;
+    border-top: 2px solid #525252;
+    margin-bottom: 0px;
+}
+
+.section_1 h2 {
+    margin-top: 30px;
+    color: #525252;
+    text-align: center;
+}
+
+/* Grid Layout */
+
+.dashboard_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background: white;
+    height: auto;
+}
+
+.dashboard_main {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    padding: 10px;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.dashboard_aside {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 0 10px;
+    height: 100%;
+}
+
+/* Dashboard main section */
+
+.account_box {
+    width: 80%;
+    height: auto;
+    background: white;
+    padding: 2%;
+    border: 10px solid #9c9c9c94;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #525252;
+    text-align: left;
+}
+
+.account_box h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.account_box img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 5%;
+    display: block;
+}
+
+.account_box_inside {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    height: 80%;
+    padding-top: 2.5%;
+}
+
+.account_box_inside p {
+    font-size: 1.1vw;
+}
+
+/* Calendar day*/
+
+.calendar-day {
+    height: 320px;
+    background: #3468af;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+}
+
+.calendar-day h2 {
+    background: #484848;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.calendar-day p {
+    margin: 0;
+    text-align: center;
+    font-size: 146px;
+}
+
+.calendar-day i {
+    font-size: 0.6em;
+}
+
+.block {
+    margin-bottom: 25px;
+    background: #6f6f6f;
+    width: 320px;
+    margin: 0 auto;
+}
+
+/* Cameras */
+
+.cameras-container {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.cameras-container h2 {
+    color: #525252;
+    text-align: center;
+    font-size: 2em;
+}
+
+.cameras-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.dashboard_aside .separator {
+    width: 70%;
+    border: none;
+    border-top: 2px solid #525252;
+    margin-bottom: 20px;
+}
+
+.camera_flexbox {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.camera_box {
+    background: #dcdcdc;
+    padding: 5px;
+    width: 80%;
+    margin-top: 50px;
+    color: #525252;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    border-radius: 5px;
+    border: 3px solid #525252;
+}
+
+.camera_box:after {
+    content: "";
+    display: block;
+    padding-bottom: 80%;
+}
+
+.cameras-container .group_elements {
+    height: 100%;
+    position: relative;
+}
+
+.camera_box h4 {
+    color: #525252;
+    position: relative;
+    top: -40px;
+    font-size: 0.5em;
+}
+
+/* add new device */
+
+.dashboard_aside .add_new_device {
+    margin: 25px auto;
+    width: 320px;
+    height: 320px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.dashboard_aside .device {
+    font-size: 25px;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    padding-top: 20%;
+    background: #6f6f6f;
+    color: white;
+    border-radius: 10px;
+}
+
+.dashboard_aside .device i {
+    color: #ffffff;
+    font-size: 60px;
+}
+
+/* Rooms Section */
+
+.room_inside {
+    width: 80%;
+    height: auto;
+    background: white;
+    padding: 2%;
+    border: 10px solid #9c9c9c94;
+    border-radius: 50px;
+    margin: 0 auto;
+    color: #525252;
+    display: grid;
+}
+
+.device_section {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+/* Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #525252;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #8BC34A;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #8BC34A;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* End */
+
+.device_group h3 i {
+    font-size: 40px;
+}
+
+.device_container {
+    width: 100%;
+}
+
+.device {
+    border-radius: 20%;
+    float: left;
+    width: 10%;
+    margin: 10px 3.5%;
+    padding: 1.5%;
+    background: #9c9c9c94;
+    height: 160px;
+    text-align: center;
+}
+
+.device p {
+    word-wrap: break-word;
+}
+
+.device .fa {
+    font-size: 50px;
+    width: 100%;
+    color: #525252;
+}
+
+a {
+    color: #525252;
+}
+
+#add_device:hover {
+    box-shadow: 0px 0px 29px 1px rgba(82, 82, 82, 1);
+}
+
+.room-container {
+    margin-top: 0;
+}
+
+.device_section {
+    margin: 0;
+}
+
+/* Graph section */
+
+.graph_container {
+    width: 32vw;
+}
+
+.graph_container canvas {
+    width: 80%!important;
+    margin: 0 auto;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 1025px) {
+    .account_box img {
+        float: none;
+        margin: 0 auto;
+    }
+    .account_box {
+        text-align: center;
+    }
+    .account_box h3 {
+        text-align: center;
+    }
+}
+
+
+  /* Mobile */
+
+  @media only screen and (max-width: 1200px) {
+
+    .device{
+        width: 15%;
+        margin: 10px 7.6666%;
+        padding: 1.5%;
+    }
+
+    
+    
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .dashboard_main {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        padding: 10px;
+        height: 100%;
+        margin-top: 20px;
+    }
+    
+    .dashboard_aside {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        padding: 0 10px;
+        height: 100%;
+    }
+
+    .calendar-day{
+        display: none;
+    }
+    .dashboard_container .add_new_device{
+        width: 70%;
+        height: 250px;
+    }
+    .add_new_device #add_device{
+        padding-top: 5%;
+    }
+
+    .camera_box:after {
+        padding-bottom: 50%;
+    }
+
+    .graph_container {
+        width: 70vw;
+    margin: 0 auto;
+    }
+    
+    .graph_container canvas {
+        width: 80%!important;
+        margin: 0 auto;
+    }
+
+    .account_box_inside p {
+        font-size: 2vw;
+    }
+
+
+}
+
+  @media only screen and (max-width: 550px) {
+
+    .device{
+        width: 25%;
+        margin: 10px 11%;
+        padding: 1.5%;
+    }
+
+    .account_box_inside p{
+        font-size: 4vw;
+    }
+    
+  }
+

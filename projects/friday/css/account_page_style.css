@@ -1,0 +1,84 @@
+
+
+.img_container{
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.img_container img{
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.img_container:hover{
+    opacity: 0.5;
+}
+
+.signup-screen-body{
+    display: block;
+}
+
+.screen{
+    top: 5vh;
+    padding-bottom: 50px;
+}
+
+.signup-screen-body-item {
+    padding: 0 50px;
+}
+
+.signup-form-group h6{
+    margin: 10px 40px;
+    text-align: left;
+    
+}
+
+.signup-form-group h6 span{
+    float: right;
+    color: #8BC34A;
+}
+
+.signup-form-group {
+    display: flex;
+}
+
+.signup-form-group a{
+    margin-left: 90%;
+    margin-top: 20px;
+}
+
+
+  
+@media only screen and (max-width: 925px) {
+
+    .signup-form-group {
+        display: block;
+    }
+    }
+
+          
+@media only screen and (max-width: 550px) {
+
+    .signup-screen-body-item {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .signup-form-control-name{
+        margin: 0;
+    }
+
+    .signup-form-group h6{
+        margin:0;
+    }
+
+    .signup-screen-body-item {
+    padding: 0;
+    }
+
+    .app-title{
+        flex-direction: column!important;
+    }
+}

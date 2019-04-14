@@ -1,0 +1,84 @@
+.section_1 {
+  height: auto;
+  background: white;
+}
+
+#top-bar {
+  background: black;
+}
+
+.history-container {
+  padding: 90px 0;
+  width: 100%;
+}
+
+.history-container h2 {
+  color: #525252;
+  text-align: center;
+  font-size: 2em;
+}
+
+.history-container h3 {
+  color: #525252;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+
+.history-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.separator {
+  width: 30%;
+  border: none;
+  border-top: 2px solid #525252;
+  margin-bottom: 40px;
+}
+
+.graph_box {
+  background: #525252;
+  width: 60%;
+  height: auto;
+  background: white;
+  padding: 2%;
+  border: 30px solid #9c9c9c94;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+#addData_rain, #addData_temperature, #addData_humidity {
+  width: 80px;
+  padding: 5px;
+  background: #c6c6c6;
+  border: none;
+  border-radius: 20px;
+  margin-left: calc(100% - 110px);
+}
+
+#addData_rain:hover, #addData_temperature:hover, #addData_humidity:hover {
+  background-color: #595959;
+  box-shadow: 0px 0px 29px 1px #595959;
+}
+
+@media only screen and (max-width: 700px) {
+  .graph_box {
+    border-width: 5px;
+    padding: 5%;
+    width: 80%;
+  }
+
+  .separator {
+    width: 50%;
+  }
+  #temperature_chart , #humidity_chart ,#rain_chart{
+    
+    width: 100%;
+    height: fit-content;
+
+  }
+}
+
+@media only screen and (max-width: 750px) {}

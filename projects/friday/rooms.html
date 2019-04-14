@@ -22,13 +22,12 @@
 
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/smooth_scrolling.js"></script>
-    <script src="js/changing_sidebar_width.js"></script>
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-<body onload="check_sidebar();" ;>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <nav id="top-bar">
 
         <div id="logo-container">
@@ -39,11 +38,11 @@
 
 
         <div id="menu">
-            <a href="signup.html" id="sign_up_button">Sign up</a>
-            <a href="" id="log_in_button">Log in</a>
-            <a href="" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span
-                    id="account_content">Account</span></a>
-        </div>
+                <a href="signup.html" id="sign_up_button">Sign up</a>
+                <a href="login.html" id="log_in_button">Log in</a>
+                <a href="account_page.html" id="account_logo"><i class="fa fa-user-circle-o" aria-hidden="true"></i>&ensp;<span
+                        id="account_content">Account</span></a>
+            </div>
 
     </nav>
 
@@ -51,15 +50,14 @@
         <div id="sidebar">
             <div class="sidebar_nav">
                 <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
-                <a href="#dashboard"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
-                <a href="#rooms"><i class="fa fa-bed"></i>&ensp;Rooms</a>
-                <a href="#devices"><i class="fa fa-plug"></i>&ensp;Devices</a>
-                <a href="#cameras"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
-                <a href="#settings"><i class="fa fa-wrench"></i>&ensp;Settings</a>
-                <a href="#history"><i class="fa fa-history"></i>&ensp;History</a>
-                <a href="#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
-                <a href="#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
-                <a href="#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
+                <a id="dashboard" href="dashboard.html"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
+                <a id="rooms" href="#"><i class="fa fa-bed"></i>&ensp;Rooms</a>
+                <a id="devices" href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
+                <a id="cameras" href="cameras.html"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                <a id="history" href="history.html"><i class="fa fa-history"></i>&ensp;History</a>
+                <a href="index.html#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
+                <a href="index.html#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
+                <a href="index.html#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
                 <a href="index.html#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
             </div>
         </div>
@@ -70,7 +68,7 @@
             <div class="rooms-container">
                 <h2>Rooms</h2>
                 <hr class="separator">
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -81,7 +79,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -93,7 +91,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -105,7 +103,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -116,7 +114,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -138,7 +136,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="room.html">
                     <div class="room_box">
                         <div class="room_inside">
                             <div class="group_elements">
@@ -149,7 +147,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#">
+                <a href="add_room.html">
                     <div class="room_box">
                         <div class="room_inside" id="add_room">
                             <div class="group_elements">
