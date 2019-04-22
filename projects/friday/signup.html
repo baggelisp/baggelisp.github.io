@@ -87,6 +87,42 @@
                             <div class="screen-header-ellipsis"></div>
                         </div>
                     </div>
+                    <!-- Begin of alerts -->
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <strong>Error!</strong> Username must be between 8-12 characters long
+                    </div>
+                    <div class="alert">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        <strong>Error!</strong> Password must be contain at least one number
+                    </div>
+                    <style>
+                        .alert {
+
+                            width: 80%;
+                            margin: 0 auto;
+                            padding: 5px 20px;
+                            background-color: #f44336;
+                            color: white;
+                            margin-top: 10px;
+                        }
+
+                        .closebtn {
+                            margin-left: 15px;
+                            color: white;
+                            font-weight: bold;
+                            float: right;
+                            font-size: 22px;
+                            line-height: 20px;
+                            cursor: pointer;
+                            transition: 0.3s;
+                        }
+
+                        .closebtn:hover {
+                            color: black;
+                        }
+                    </style>
+                    <!-- End of alerts -->
                     <div class="signup-app-title">
                         <span>Sign Up Form</span>
                         <!-- <p>
@@ -118,8 +154,9 @@
                                         required>
                                 </div>
                                 <div class="signup-form-group buttons">
-                                    <button class="signup-form-button">SEND</button>
+                                    <button class="signup-form-button">SIGN UP</button>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -141,7 +178,7 @@
 
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#servises">Services</a></li>
+                        <li><a href="index.html#services">Services</a></li>
                         <li><a href="index.html#team">Team</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
                     </ul>
@@ -165,6 +202,8 @@
                         Vangelis Spathonis <br>
                         <i class="fa fa-user" aria-hidden="true"></i>&ensp;
                         Thanasis Kalatheris <br>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>&ensp;
+                        fridaysmarthome@gmail.com <br>
                         <i class="fa fa-university" aria-hidden="true"></i>&ensp;
                         University Of Patras <br>
                         <i class="fa fa-graduation-cap" aria-hidden="true"></i>&ensp;

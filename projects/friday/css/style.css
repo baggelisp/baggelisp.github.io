@@ -1,5 +1,3 @@
-/* Comments */
-
 html {
   background: #343434;
 }
@@ -92,12 +90,21 @@ nav #logo-container img {
   background-color: #8BC34A;
 }
 
+#log_out_button {
+  border-radius: 10%;
+  background-color: #8BC34A;
+}
+
 #sign_up_button {
   border-radius: 10%;
   background-color: #383838;
 }
 
 #log_in_button:hover {
+  border: 2px solid #8BC34A;
+  background-color: black;
+}
+#log_out_button:hover {
   border: 2px solid #8BC34A;
   background-color: black;
 }
@@ -109,11 +116,11 @@ nav #logo-container img {
 
 #account_logo {
   border-radius: 10%;
-  background-color: #8BC34A;
+  background-color: #383838;
 }
 
 #account_logo:hover {
-  border: 2px solid #8BC34A;
+  border: 2px solid #383838;
   background-color: black;
 }
 
@@ -335,7 +342,7 @@ input[type="text"], input[type="password"] {
   border: 0;
   border-bottom: 1px solid rgba(247, 243, 243, 0.248);
   outline: none;
-  color: #46485c;
+  text-transform: none;
 }
 
 .forgot {
@@ -604,7 +611,7 @@ input[type="text"], input[type="password"] {
 }
 
 .image_baggos {
-  background-image: url(../images/person.jpg);
+  background-image: url(../images/vangelis_spathonis_photo.jpg);
   height: 200px;
   width: 200px;
   border-radius: 100%;
@@ -942,7 +949,8 @@ input[type="text"], input[type="password"] {
 }
 
 .footer .fa {
-  width: 15px;
+  width: 16px;
+  text-align: center;
 }
 
 #copyright {

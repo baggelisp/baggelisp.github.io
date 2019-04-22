@@ -114,7 +114,7 @@
 
 .calendar-day {
     height: 320px;
-    background: #3468af;
+    background: #383838;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 10px;
@@ -139,7 +139,7 @@
 
 .block {
     margin-bottom: 25px;
-    background: #6f6f6f;
+    background: #383838;
     width: 320px;
     margin: 0 auto;
 }
@@ -225,7 +225,7 @@
     margin: 0;
     padding: 0;
     padding-top: 20%;
-    background: #6f6f6f;
+    background: #383838;
     color: white;
     border-radius: 10px;
 }

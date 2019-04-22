@@ -1,0 +1,252 @@
+.section_1 {
+    height: auto;
+    background: white;
+    padding-top: 80px;
+    color: #525252;
+}
+
+#top-bar {
+    background: black;
+}
+
+.admin_page_container {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.admin_page_container h2 {
+    color: #525252;
+    text-align: center;
+    font-size: 2em;
+}
+
+.admin_page_container h3 {
+    color: #525252;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+
+.admin_page_container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.separator {
+    width: 30%;
+    border: none;
+    border-top: 2px solid #525252;
+    margin-bottom: 0px;
+}
+
+.section_1 h2 {
+    margin-top: 30px;
+    color: #525252;
+    text-align: center;
+}
+
+/* Admin box */
+
+.account_box {
+    background: white;
+    padding: 2%;
+    border: 10px solid #9c9c9c94;
+    border-radius: 50px;
+    color: #525252;
+    text-align: left;
+    height: auto;
+    width: calc(76% - 20px);
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.account_box h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.account_box img {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 10%;
+    display: block;
+    width: 40%;
+    height: inherit;
+}
+
+.account_box_inside {
+    height: 80%;
+    padding-top: 2.5%;
+    width: 500px;
+    display: flex;
+}
+
+.account_box_inside p {
+    font-size: 1.1vw;
+}
+
+.group_info {
+    width: 50%;
+}
+
+.group_info button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    padding: 2px 30px;
+    width: 150px;
+    height: 20px;
+    margin: 0 auto;
+    width: 70%;
+    margin: 0 15%;
+    margin-top: 10px;
+}
+.group_info button a{
+    color: white;
+}
+.group_info button:hover{
+    background-color: rgb(32, 32, 32);
+}
+
+.users_table_container {
+    width: 80%;
+    margin: 5% 10%;
+    height: 600px;
+    overflow: auto
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+.messages_table_container {
+    width: 80%;
+    margin: 5% 10%;
+    height: 800px;
+    overflow: auto
+}
+
+td .button {
+    background: #8bc34a;
+    padding: 10px;
+    border-radius: 4px;
+}
+td .button:hover {
+    background: #517429;
+}
+#users_table tr > td:nth-child(8) , #users_table tr > td:nth-child(9){
+    text-align: center;
+}
+
+#delete_button{
+    color: red;
+}
+/* Mobile */
+
+@media only screen and (max-width: 760px) {
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+    td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    .account_box_inside {
+        display: block;
+    }
+    .account_box_inside img {
+        width: 100%;
+        margin: 0;
+    }
+    .group_info {
+        width: 100%;
+    }
+    .group_info h3 {
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .group_info p {
+        text-align: center;
+        font-size: 1em;
+    }
+}
+
+  input[type=text] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #525252;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: black;
+    /* padding: 10px; */
+    padding: 5px 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin: 0%;
+  }
+  
+  input[type=text]:focus {
+    /* transform: translateX(-300px);
+    transition-duration: 0.4s; */
+    width: 600px;
+  }
+
+  .search_form{
+      float: right;
+  }
