@@ -265,13 +265,3 @@ input[type="password"] {
   }
 }
 
-/* 
-@media screen and (max-width: 600px) {
-  .login-screen-body {
-    box-sizing: border-box;
-    padding: 40px;
-  }
-  .login-screen-body-item {
-    padding: 0;
-  }
-} */

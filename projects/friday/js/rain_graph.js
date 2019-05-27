@@ -1,7 +1,7 @@
 // Define variables
 var dateFormat_rain = 'MMMM DD YYYY';
 var date_rain = moment('April 01 2017', dateFormat_rain);
-var data_rain = [randomBar(date_rain, 30)];
+var data_rain = [randomBar_rain(date_rain, 30)];
 var cfg_rain = {
     type: 'bar',
     data: {
@@ -12,6 +12,7 @@ var cfg_rain = {
             fillColor: "#000000",
             backgroundColor: "#000000",
             data: data_rain,
+            // data: [0,0,0,0,1,1,1,1,1,0],
             //type: 'line',
             pointRadius: 2,
             fill: false,
@@ -48,9 +49,7 @@ var cfg_rain = {
                     fontColor: "#000"
                 },
                 ticks: {
-                    source: 'data',
-                    autoSkip: true,
-                    fontColor: "#000"
+                    display: false
                 }
             }]
         },
@@ -75,8 +74,8 @@ var cfg_rain = {
 // Push to data 10 values
 while (data_rain.length < 10) {
     date_rain = date_rain.clone().add(1, 'd');
-    if (date_rain.isoWeekday() <= 5) {
-        data_rain.push(randomBar(date_rain, data_rain[data_rain.length - 1].y));
+    if (date_rain.isoWeekday() <= 10) {
+        data_rain.push(randomBar_rain(date_rain, data_rain[data_rain.length - 1].y));
     }
 }
 //Create chart
@@ -87,21 +86,21 @@ var chart_rain = new Chart(ctx_rain, cfg_rain);
 //Function add new data for "add new" button
 function add_new_data_rain() {
     for (i = 0; i < 5; i++) {
-        date_rain = date_rain.clone().add(1, 'd');
+        date_rain = date_rain.clone().add(-10, 'd');
         if (date_rain.isoWeekday() <= 5) {
-            data_rain.push(randomBar(date_rain, data_rain[data_rain.length - 1].y));
+            data_rain.push(randomBar_rain(date_rain, data_rain[data_rain.length - 1].y));
         }
     }
     chart_rain.update();
 }
 
-function randomNumber(min, max) {
-    return Math.random() * (max - min) + min;
+function randomNumber_rain(min, max) {
+    return Math.round(Math.random()); //retrun 0 or 1 --only for rain--
 }
 
-function randomBar(date, lastClose) {
-    var open = randomNumber(lastClose * 0.95, lastClose * 1.05).toFixed(2);
-    var close = randomNumber(open * 0.95, open * 1.05).toFixed(2);
+function randomBar_rain(date, lastClose) {
+    var open = randomNumber_rain(lastClose * 0.95, lastClose * 1.05).toFixed(2);
+    var close = randomNumber_rain(open * 0.95, open * 1.05).toFixed(2);
     return {
         t: date.valueOf(),
         y: close

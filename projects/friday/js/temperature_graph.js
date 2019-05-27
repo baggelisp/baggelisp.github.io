@@ -1,5 +1,6 @@
 // Define variables
-var dateFormat_temperature = 'MMMM DD YYYY';
+// var dateFormat_temperature = 'MMMM DD YYYY';
+var dateFormat_temperature = 'h:mm:ss a';
 var date_temperature = moment('April 01 2017', dateFormat_temperature);
 var data_temperature = [randomBar(date_temperature, 30)];
 var cfg_temperature = {
@@ -74,23 +75,46 @@ var cfg_temperature = {
 
 // Push to data 10 values
 while (data_temperature.length < 10) {
-    date_temperature = date_temperature.clone().add(1, 'd');
-    if (date_temperature.isoWeekday() <= 5) {
-        data_temperature.push(randomBar(date_temperature, data_temperature[data_temperature.length - 1].y));
-    }
+    //************************************ 
+   // var date_temperature = moment('April 01 2017', dateFormat_temperature);
+    date_temperature = date_temperature.clone().add(-1, 'd');
+    //date_temperature.unshift(date_temperature[0].add(-1, 'd'));
+    //if (date_temperature.isoWeekday() <= 10) {
+        data_temperature.unshift(randomBar(date_temperature, data_temperature[data_temperature.length - 1].y));
+    //}
 }
 //Create chart
-ctx_temperature = document.getElementById('temperature_chart').getContext('2d');
-ctx_temperature.canvas.width = 1000;
-ctx_temperature.canvas.height = 300;
-var chart_temperature = new Chart(ctx_temperature, cfg_temperature);
+//ctx_temperature = document.getElementById('temperature_chart').getContext('2d');
+//document.querySelector(".panel-main")
+//////////////////////////////////////////
+//ctx_temperature = document.querySelector(".temperature").getContext('2d');
+ctx_temperatureAll = document.querySelectorAll(".temperature");
+// ctx_temperature.each(function(){
+
+// });
+///////////////////////////////////
+// ctx_temperature.canvas.width = 1000;
+// ctx_temperature.canvas.height = 300;
+//var chart_temperature = new Chart(ctx_temperature, cfg_temperature);
+// ctx_temperatureAll.each(function(){
+//     var $this = $(this);
+//     var ctxx=this.getContext('2d');
+//     var chart_temperature = new Chart(ctxx, cfg_temperature);
+for (i = 0; i < ctx_temperatureAll.length; i++) {
+    var ctx=ctx_temperatureAll[i].getContext('2d');
+    ctx.canvas.width = 1000;
+    ctx.canvas.height = 300;
+    var chart_temperature = new Chart(ctx, cfg_temperature);
+}
+
+// });
 //Function add new data for "add new" button
 function add_new_data_temperature() {
     for (i = 0; i < 5; i++) {
-        date_temperature = date_temperature.clone().add(1, 'd');
-        if (date_temperature.isoWeekday() <= 5) {
-            data_temperature.push(randomBar(date_temperature, data_temperature[data_temperature.length - 1].y));
-        }
+        date_temperature = date_temperature.clone().add(-1, 'd');
+        //if (date_temperature.isoWeekday() <= 5) {
+            data_temperature.unshift(randomBar(date_temperature, data_temperature[data_temperature.length - 1].y));
+        //}
     }
     chart_temperature.update();
 }

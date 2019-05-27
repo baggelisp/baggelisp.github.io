@@ -74,10 +74,10 @@ var cfg_humidity = {
 
 // Push to data 10 values
 while (data_humidity.length < 10) {
-    date_humidity = date_humidity.clone().add(1, 'd');
-    if (date_humidity.isoWeekday() <= 5) {
-        data_humidity.push(randomBar(date_humidity, data_humidity[data_humidity.length - 1].y));
-    }
+    date_humidity = date_humidity.clone().add(-1, 'd');
+    //if (date_humidity.isoWeekday() <= 10) {
+        data_humidity.unshift(randomBar(date_humidity, data_humidity[data_humidity.length - 1].y));
+    //}
 }
 //Create chart
 ctx_humidity = document.getElementById('humidity_chart').getContext('2d');
@@ -87,10 +87,10 @@ var chart_humidity = new Chart(ctx_humidity, cfg_humidity);
 //Function add new data for "add new" button
 function add_new_data_humidity() {
     for (i = 0; i < 5; i++) {
-        date_humidity = date_humidity.clone().add(1, 'd');
-        if (date_humidity.isoWeekday() <= 5) {
-            data_humidity.push(randomBar(date_humidity, data_humidity[data_humidity.length - 1].y));
-        }
+        date_humidity = date_humidity.clone().add(-1, 'd');
+        //if (date_humidity.isoWeekday() <= 5) {
+            data_humidity.unshift(randomBar(date_humidity, data_humidity[data_humidity.length - 1].y));
+        //}
     }
     chart_humidity.update();
 }

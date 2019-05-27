@@ -241,7 +241,7 @@ input[type="password"]{
   margin: 0;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1080px) {
   .signup-screen-body-item.left {
     margin-bottom: 30px;
   }

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion+One">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mobile.css">
-    <link rel="stylesheet" type="text/css" href="css/history_style.css">
+    <link rel="stylesheet" type="text/css" href="css/add_device_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -22,11 +22,7 @@
 
     <script src="js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="js/Chart.js"></script>
-
-
+    <!-- <script src="js/logging.js"></script> -->
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -54,51 +50,58 @@
         <div id="sidebar">
             <div class="sidebar_nav">
                 <a href="index.html" style="background-color: #00000029;"><i class="fa fa-home"> </i>&ensp;Home</a>
-                <a href="dashboard.html"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
-                <a href="rooms.html"><i class="fa fa-bed"></i>&ensp;Rooms</a>
-                <a href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
-                <a href="cameras.html"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
-                <a href="#"><i class="fa fa-history"></i>&ensp;History</a>
+                <a id="dashboard" href="dashboard.html"><i class="fa fa-sliders"></i>&ensp;Dashboard</a>
+                <a id="rooms" href="rooms.html"><i class="fa fa-bed"></i>&ensp;Rooms</a>
+                <a id="devices" href="devices.html"><i class="fa fa-plug"></i>&ensp;Devices</a>
+                <a id="cameras" href="cameras.html"><i class="fa fa-video-camera"></i>&ensp;Cameras</a>
+                <a id="history" href="history.html"><i class="fa fa-history"></i>&ensp;History</a>
                 <a href="index.html#about"><i class="fa fa-info-circle"></i>&ensp;About</a>
                 <a href="index.html#services"><i class="fa fa-cubes"></i>&ensp;Services</a>
                 <a href="index.html#team"><i class="fa fa-address-card"></i>&ensp;Team</a>
                 <a href="index.html#contact"><i class="fa fa-envelope"></i>&ensp;Contact</a>
+                <!-- <a onclick="change_log_in_value();"><i class="fa fa-envelope" ></i>&ensp;Change log_in_value (TESTING)</a> -->
             </div>
         </div>
     </div>
     <div id="main">
         <div class='section_1'>
+            <div class="container">
+                <form class="form_container" action="/action_page.php">
+                    <h1>Device: Light 1</h1>
 
-            <div class="history-container">
-                <h2>History</h2>
-                <hr class="separator">
-                <h3>Temperature</h3>
-                <div class="graph_box">
-                    <canvas id="temperature_chart" class="temperature" width="100%" height="100%"></canvas>
-                    <br>
-                    <button id="addData_temperature" onclick="add_new_data_temperature();">Add Data</button>
-                </div>
-                <div class="graph_box">
-                    <canvas id="temperature_chart2" class="temperature" width="100%" height="100%"></canvas>
-                    <br>
-                    <button id="addData_temperature1" onclick="add_new_data_temperature();">Add Data</button>
-                </div>
-                <h3>Humidity</h3>
-                <div class="graph_box">
-                    <canvas id="humidity_chart" width="100%" height="100%"></canvas>
-                    <br>
-                    <button id="addData_humidity" onclick="add_new_data_humidity();">Add Data</button>
-                </div>
-                <h3>Rain</h3>
-                <div class="graph_box">
-                    <canvas id="rain_chart" width="100%" height="100%"></canvas>
-                    <br>
-                    <button id="addData_rain" onclick="add_new_data_rain();">Add Data</button>
-                </div>
+                    <h3>Change room</h3>
+                    <select class="device_option" name="option">
+
+                        <option value="" disabled selected>Rooms</option>
+                        <option value="1">&#xf26c; &ensp; Living room</option>
+                        <option value="2">&#xf236; &ensp; Bedroom</option>
+                        <option value="3">&#xf2cd; &ensp; Bathroom</option>
+                        <option value="4">&#xf000; &ensp; Kitchen</option>
+                        <option value="5">&#xf1bb; &ensp; Garden</option>
+                        <option value="6">&#xf0c1; &ensp; Other</option>
+                    </select>
+
+
+                    <h3>Add comment <i style="font-size:0.7em">(Optional)</i></h3>
+                    <input type="text" id="comment" name="comment" placeholder="Your comment">
+
+                    <h3>Add api <i style="font-size:0.7em">(Only for cameras)</i> <a style="float:right; color: #8BC34A"
+                            href="http://prntscr.com/neq3nv" target="_blank"><i class="fa fa-info-circle"
+                                aria-hidden="true"></i></a></h3>
+                    <!-- <img src="images/youtube_emb.png"  style="width:60%; margin:0 20% 0 20%;"> -->
+                    <!-- <img src="images/youtube_emb.png"  style="width:300px;"> -->
+                    <input type="text" id="camera_link" name="camera_link" placeholder="Example: DL9X5u-wDgw">
+
+                    <p><button style="background:red">Delete</button></p>
+                    <p><button>Update</button></p>
+
+                </form>
+
             </div>
-            <script src="js/humidity_graph.js"></script>
-            <script src="js/temperature_graph.js"></script>
-            <script src="js/rain_graph.js"></script>
+
+
+
+
 
 
 

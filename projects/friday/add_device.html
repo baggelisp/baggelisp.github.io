@@ -39,10 +39,9 @@
 
 
         <div id="menu">
-            <a href="signup.html" id="sign_up_button">Sign up</a>
-            <a href="login.html" id="log_in_button">Log in</a>
             <a href="account_page.html" id="account_logo"><i class="fa fa-user-circle-o"
                     aria-hidden="true"></i>&ensp;<span id="account_content">Account</span></a>
+            <a href="index.html" id="log_out_button">Log out</a>
         </div>
 
     </nav>
@@ -86,7 +85,7 @@
                     </select>
 
                     <script>
-                        if (document.getElementById("select_device").selectedIndex == "2"){
+                        if (document.getElementById("select_device").selectedIndex == "2") {
                             console.log("hiii")
                         }
                     </script>
@@ -107,11 +106,13 @@
                     <h3>Comment <i style="font-size:0.7em">(Optional)</i></h3>
                     <input type="text" id="comment" name="comment" placeholder="Your comment">
 
-                    <h3>Add api <i style="font-size:0.7em">(Only for cameras)</i> <a  style="float:right; color: #8BC34A" href="http://prntscr.com/neq3nv" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i></a></h3>
+                    <h3>Add api <i style="font-size:0.7em">(Only for cameras)</i> <a style="float:right; color: #8BC34A"
+                            href="http://prntscr.com/neq3nv" target="_blank"><i class="fa fa-info-circle"
+                                aria-hidden="true"></i></a></h3>
                     <!-- <img src="images/youtube_emb.png"  style="width:60%; margin:0 20% 0 20%;"> -->
                     <!-- <img src="images/youtube_emb.png"  style="width:300px;"> -->
                     <input type="text" id="camera_link" name="camera_link" placeholder="Example: DL9X5u-wDgw">
-                    
+
 
                     <p><button>Add</button></p>
                 </form>
