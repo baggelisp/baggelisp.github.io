@@ -247,6 +247,7 @@ input[type="password"]{
   }
   .signup-form-control-name {
     width: 100%;
+    margin-bottom: 20px;
   }
   .signup-app-title {
     padding-top: 20px;
@@ -261,19 +262,24 @@ input[type="password"]{
   .signup-screen-body-item {
     padding: 0;
   }
-  .signup-form-control-name:nth-child(2){
-    margin-top: 40px;
-
+  .signup-form-group {
+    margin: 0;
+  }
+  .signup-form-group.message {
+    margin: 0;
+  }
+  .signup-form-group.message{
+    margin-bottom: 20px;
+  }
+  .signup-form-group.buttons{
+    text-align: center;
   }
 }
 
-/* 
-@media screen and (max-width: 600px) {
-  .signup-screen-body {
-    box-sizing: border-box;
-    padding: 40px;
-  }
-  .signup-screen-body-item {
-    padding: 0;
-  }
-} */
+
+@media screen and (max-width: 550px) {
+
+
+
+
+}

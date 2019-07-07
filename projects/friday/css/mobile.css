@@ -144,6 +144,15 @@
 }
 
 @media only screen and (max-width: 500px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative
+    }
+    input, textarea, button, select, a {
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
     .section_1 .login_wrapper {
         width: 60%;
         margin-left: 10%;
@@ -155,11 +164,12 @@
         margin-top: 25px;
     }
     #menu a {
-        padding: 8px;
+        padding: 6px 2px;
+        font-size: 23px;
     }
     #account_logo .fa {
         font-size: 20px;
-        padding: 10px 0px 10px 8px;
+        padding: 10px 0px 10px 10px;
         border-radius: 50%;
     }
     #fa {
@@ -168,8 +178,11 @@
     #sign_up_button {
         display: none;
     }
-    #log_in_button {
+    #log_out_button {
         display: none;
+    }
+    #log_in_button {
+        margin-top: 34px;
     }
     nav #logo-container {
         width: 50%;
@@ -227,9 +240,48 @@
     .color-overlay {
         height: 200vh;
     }
+    #sign-out-button {
+        display: block!important;
+    }
+    #myBtn {
+        display: none;
+    }
+    #log_in_button {
+        display: none;
+    }
+    #sign_up_button {
+        display: none;
+    }
+    .app-form-group.buttons {
+        text-align: center;
+    }
+    .signup-form-group.buttons {
+        text-align: center!important;
+    }
+    .login-form-group.buttons {
+        margin-top: 15px;
+        text-align: center!important;
+    }
+    #register_button:hover {
+        border: 2px solid #383838;
+        background-color: black;
+    }
+    #register_button {
+        display: inline-block;
+        border-radius: 10%;
+        background-color: #383838;
+        padding: 6px 12px!important;
+        margin-right: 10px;
+    }
+    .contact_wrapper {
+        width: 70%!important;
+    }
 
-	#myBtn {
-	display: none;
-}
-}
+    .section_1 , .section_2 , .section_3 , .section_4{
+        min-height: 600px
+    }
 
+    #home{
+        min-height: 1200px
+    } 
+}

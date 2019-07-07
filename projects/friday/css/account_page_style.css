@@ -1,26 +1,23 @@
-
-
-.img_container{
+.img_container {
     width: 200px;
     margin: 0 auto;
     margin-top: 30px;
 }
 
-.img_container img{
+.img_container img {
     width: 100%;
     border-radius: 50%;
-    
 }
 
-.img_container:hover{
+.img_container:hover {
     opacity: 0.5;
 }
 
-.signup-screen-body{
+.signup-screen-body {
     display: block;
 }
 
-.screen{
+.screen {
     top: 5vh;
     padding-bottom: 50px;
 }
@@ -29,13 +26,12 @@
     padding: 0 50px;
 }
 
-.signup-form-group h6{
+.signup-form-group h6 {
     margin: 10px 40px;
     text-align: left;
-    
 }
 
-.signup-form-group h6 span{
+.signup-form-group h6 span {
     float: right;
     color: #8BC34A;
 }
@@ -44,41 +40,60 @@
     display: flex;
 }
 
-.signup-form-group a{
+.img_container {
+    width: 100%;
+    max-width: 200px;
+}
+
+.signup-form-group a {
     margin-left: 90%;
     margin-top: 20px;
 }
 
+@media screen and (max-width: 1080px) {
+    .signup-form-control-name {
+        width: calc(100% - 80px);
+    }
+    
+}
 
-  
 @media only screen and (max-width: 925px) {
-
     .signup-form-group {
         display: block;
     }
-    }
+}
 
-          
 @media only screen and (max-width: 550px) {
-
     .signup-screen-body-item {
         width: 95%;
         margin: 0 auto;
     }
-
-    .signup-form-control-name{
+    .signup-form-control-name {
         margin: 0;
     }
-
-    .signup-form-group h6{
-        margin:0;
+    .signup-form-group h6 {
+        margin: 0;
     }
-
     .signup-screen-body-item {
-    padding: 0;
+        padding: 0;
     }
-
-    .app-title{
+    .app-title {
         flex-direction: column!important;
     }
+
+    .signup-screen-body {
+        padding:0
+    }
+        
+        .signup-form-group h6{
+            overflow-wrap: break-word;
+        }
+    .signup-form-group h6 span {
+         float: none; 
+         display: block;
+     }
+     .signup-form-group a {
+        margin-left: 0;
+    }
+
 }

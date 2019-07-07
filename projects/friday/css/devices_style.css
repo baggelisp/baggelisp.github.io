@@ -27,3 +27,10 @@
   .device{
     height: 180px;
   }
+
+
+  @media only screen and (max-width: 800px) {
+    .device{
+      padding: 20px 1.5%;
+    }
+  }

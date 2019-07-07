@@ -1,4 +1,5 @@
 .section_1 {
+  min-height: 100vh;
   height: auto;
   background: white;
 }
