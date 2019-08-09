@@ -635,7 +635,7 @@ input[type="text"], input[type="password"] {
 }
 
 .image_thanos {
-  background-image: url(../images/thankala.jpg);
+  background-image: url(../images/thankala.png);
   height: 200px;
   width: 200px;
   border-radius: 100%;
