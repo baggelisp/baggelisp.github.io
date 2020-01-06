@@ -8,7 +8,7 @@ Demo:
 
 New Version:
 
-![alt text](https://github.com/baggelisp/baggelisp.github.io/blob/master/2.jpg?raw=true)
+![alt text](https://github.com/baggelisp/baggelisp.github.io/blob/master/2.png?raw=true)
 
 Old Version:
 
